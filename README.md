@@ -1,0 +1,1 @@
+# awscdk-resources-mongodbatlas-go
