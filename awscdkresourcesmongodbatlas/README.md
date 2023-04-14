@@ -4,6 +4,14 @@ Use MongoDB Atlas [AWS CDK](https://aws.amazon.com/cdk/) (or Cloud Development K
 
 ## Available Packages
 
+### NPM
+
+The npm package is available at [awscdk-resources-mongodbatlas](https://www.npmjs.com/package/awscdk-resources-mongodbatlas)
+
+```
+npm i awscdk-resources-mongodbatlas
+```
+
 ### Go
 
 The go package is generated into the [github.com/mongodb/awscdk-resources-mongodbatlas-go](https://github.com/mongodb/awscdk-resources-mongodbatlas-go) package.
@@ -11,6 +19,10 @@ The go package is generated into the [github.com/mongodb/awscdk-resources-mongod
 ```
 go get github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas
 ```
+
+## Available Constructors
+
+MongoDB Atlas AWS CDK Resources provides L1, L2 and L3 CDK constructors. Please, have a look at [README.md](src/README.md#cdk-constructors) for a full lists of constructors and examples.
 
 ## Getting Started
 

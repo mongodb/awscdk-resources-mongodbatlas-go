@@ -34,6 +34,8 @@ type CfnOnlineArchiveProps struct {
 	//
 	// See [Secret Manager Profile setup](../../../examples/profile-secret.yaml).
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
+	// Unique 24-hexadecimal digit string that identifies your project.
+	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
 	// Regular frequency and duration when archiving process occurs.
 	Schedule *ScheduleView `field:"optional" json:"schedule" yaml:"schedule"`
 }

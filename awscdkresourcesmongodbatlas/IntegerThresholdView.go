@@ -10,6 +10,6 @@ type IntegerThresholdView struct {
 	// Element used to express the quantity.
 	//
 	// This can be an element of time, storage capacity, and the like.
-	Units IntegerThresholdViewUnits `field:"optional" json:"units" yaml:"units"`
+	Units *string `field:"optional" json:"units" yaml:"units"`
 }
 
