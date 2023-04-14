@@ -4,7 +4,7 @@ package awscdkresourcesmongodbatlas
 
 type MetricThresholdView struct {
 	// Human-readable label that identifies the metric against which MongoDB Cloud checks the configured **metricThreshold.threshold**.
-	MetricName MetricThresholdViewMetricName `field:"optional" json:"metricName" yaml:"metricName"`
+	MetricName *string `field:"optional" json:"metricName" yaml:"metricName"`
 	// MongoDB Cloud computes the current metric value as an average.
 	Mode MetricThresholdViewMode `field:"optional" json:"mode" yaml:"mode"`
 	// Comparison operator to apply when checking the current metric value.
@@ -14,6 +14,6 @@ type MetricThresholdView struct {
 	// Element used to express the quantity.
 	//
 	// This can be an element of time, storage capacity, and the like.
-	Units MetricThresholdViewUnits `field:"optional" json:"units" yaml:"units"`
+	Units *string `field:"optional" json:"units" yaml:"units"`
 }
 

@@ -15,8 +15,6 @@ type CfnOnlineArchive interface {
 	awscdk.CfnResource
 	// Attribute `MongoDB::Atlas::OnlineArchive.ArchiveId`.
 	AttrArchiveId() *string
-	// Attribute `MongoDB::Atlas::OnlineArchive.ProjectId`.
-	AttrProjectId() *string
 	// Attribute `MongoDB::Atlas::OnlineArchive.State`.
 	AttrState() *string
 	// Attribute `MongoDB::Atlas::OnlineArchive.TotalCount`.
@@ -201,16 +199,6 @@ func (j *jsiiProxy_CfnOnlineArchive) AttrArchiveId() *string {
 	_jsii_.Get(
 		j,
 		"attrArchiveId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CfnOnlineArchive) AttrProjectId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attrProjectId",
 		&returns,
 	)
 	return returns

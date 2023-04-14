@@ -13,18 +13,10 @@ import (
 // A CloudFormation `MongoDB::Atlas::AlertConfiguration`.
 type CfnAlertConfiguration interface {
 	awscdk.CfnResource
-	// Attribute `MongoDB::Atlas::AlertConfiguration.Created`.
-	AttrCreated() *string
 	// Attribute `MongoDB::Atlas::AlertConfiguration.Enabled`.
 	AttrEnabled() awscdk.IResolvable
-	// Attribute `MongoDB::Atlas::AlertConfiguration.GroupId`.
-	AttrGroupId() *string
 	// Attribute `MongoDB::Atlas::AlertConfiguration.Id`.
 	AttrId() *string
-	// Attribute `MongoDB::Atlas::AlertConfiguration.TotalCount`.
-	AttrTotalCount() *float64
-	// Attribute `MongoDB::Atlas::AlertConfiguration.TypeName`.
-	AttrTypeName() *string
 	// Attribute `MongoDB::Atlas::AlertConfiguration.Updated`.
 	AttrUpdated() *string
 	// Options for this resource, such as condition, update policy etc.
@@ -202,16 +194,6 @@ type jsiiProxy_CfnAlertConfiguration struct {
 	internal.Type__awscdkCfnResource
 }
 
-func (j *jsiiProxy_CfnAlertConfiguration) AttrCreated() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attrCreated",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CfnAlertConfiguration) AttrEnabled() awscdk.IResolvable {
 	var returns awscdk.IResolvable
 	_jsii_.Get(
@@ -222,41 +204,11 @@ func (j *jsiiProxy_CfnAlertConfiguration) AttrEnabled() awscdk.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_CfnAlertConfiguration) AttrGroupId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attrGroupId",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CfnAlertConfiguration) AttrId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"attrId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CfnAlertConfiguration) AttrTotalCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"attrTotalCount",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CfnAlertConfiguration) AttrTypeName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attrTypeName",
 		&returns,
 	)
 	return returns

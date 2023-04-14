@@ -6,12 +6,12 @@ package awscdkresourcesmongodbatlas
 //
 // This collection remains under revision and may change. Refer to the legacy documentation for this collection in the following link.
 type CfnAlertConfigurationProps struct {
-	// Event type that triggers an alert.
-	EventTypeName CfnAlertConfigurationPropsEventTypeName `field:"optional" json:"eventTypeName" yaml:"eventTypeName"`
-	// List of one or more Uniform Resource Locators (URLs) that point to API sub-resources, related API resources, or both.
+	// Date and time when MongoDB Cloud created the alert configuration.
 	//
-	// RFC 5988 outlines these relationships.
-	Links *[]*Link `field:"optional" json:"links" yaml:"links"`
+	// This parameter expresses its value in the ISO 8601 timestamp format in UTC.
+	Created *string `field:"optional" json:"created" yaml:"created"`
+	// Event type that triggers an alert.
+	EventTypeName *string `field:"optional" json:"eventTypeName" yaml:"eventTypeName"`
 	// List of rules that determine whether MongoDB Cloud checks an object for the alert configuration.
 	//
 	// You can filter using the matchers array if the **eventTypeName** specifies an event for a host, replica set, or sharded cluster.
@@ -24,11 +24,13 @@ type CfnAlertConfigurationProps struct {
 	Notifications *[]*NotificationView `field:"optional" json:"notifications" yaml:"notifications"`
 	// Profile used to provide credentials information, (a secret with the cfn/atlas/profile/{Profile}, is required), if not provided default is used.
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
-	// List of returned documents that MongoDB Cloud provides when completing this request.
-	Results *[]*AlertView `field:"optional" json:"results" yaml:"results"`
+	// Unique 24-hexadecimal digit string that identifies your project.
+	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
 	// Limit that triggers an alert when exceeded.
 	//
 	// The resource returns this parameter when **eventTypeName** has not been set to 'OUTSIDE_METRIC_THRESHOLD'.
 	Threshold *IntegerThresholdView `field:"optional" json:"threshold" yaml:"threshold"`
+	// Human-readable label that displays the alert type.
+	TypeName *string `field:"optional" json:"typeName" yaml:"typeName"`
 }
 
