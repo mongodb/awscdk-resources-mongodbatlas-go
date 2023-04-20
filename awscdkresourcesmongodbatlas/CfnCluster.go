@@ -26,6 +26,8 @@ type CfnCluster interface {
 	CfnProperties() *map[string]interface{}
 	// AWS resource type.
 	CfnResourceType() *string
+	// Attribute `MongoDB::Atlas::Cluster.ConnectionStrings`.
+	ConnectionStrings() *ConnectionStrings
 	// Returns: the stack trace of the point where this Resource was created from, sourced
 	// from the +metadata+ entry typed +aws:cdk:logicalId+, and with the bottom-most
 	// node +internal+ entries filtered.
@@ -261,6 +263,16 @@ func (j *jsiiProxy_CfnCluster) CfnResourceType() *string {
 	_jsii_.Get(
 		j,
 		"cfnResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnCluster) ConnectionStrings() *ConnectionStrings {
+	var returns *ConnectionStrings
+	_jsii_.Get(
+		j,
+		"connectionStrings",
 		&returns,
 	)
 	return returns
