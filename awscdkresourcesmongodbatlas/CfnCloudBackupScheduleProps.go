@@ -1,4 +1,3 @@
-// MongoDB Atlas CDK Construct Library for AWS CloudFormation Resources
 package awscdkresourcesmongodbatlas
 
 
@@ -6,8 +5,6 @@ package awscdkresourcesmongodbatlas
 type CfnCloudBackupScheduleProps struct {
 	// The name of the Atlas cluster that contains the snapshots you want to retrieve.
 	ClusterName *string `field:"required" json:"clusterName" yaml:"clusterName"`
-	// Profile used to provide credentials information, (a secret with the cfn/atlas/profile/{Profile}, is required), if not provided default is used.
-	Profile *string `field:"required" json:"profile" yaml:"profile"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Flag that indicates whether automatic export of cloud backup snapshots to the AWS bucket is enabled.
@@ -26,6 +23,8 @@ type CfnCloudBackupScheduleProps struct {
 	Links *[]*Link `field:"optional" json:"links" yaml:"links"`
 	// Rules set for this backup schedule.
 	Policies *[]*ApiPolicyView `field:"optional" json:"policies" yaml:"policies"`
+	// Profile used to provide credentials information, (a secret with the cfn/atlas/profile/{Profile}, is required), if not provided default is used.
+	Profile *string `field:"optional" json:"profile" yaml:"profile"`
 	// UTC Hour of day between 0 and 23 representing which hour of the day that Atlas takes a snapshot.
 	ReferenceHourOfDay *float64 `field:"optional" json:"referenceHourOfDay" yaml:"referenceHourOfDay"`
 	// UTC Minute of day between 0 and 59 representing which minute of the referenceHourOfDay that Atlas takes the snapshot.

@@ -1,10 +1,9 @@
-// MongoDB Atlas CDK Construct Library for AWS CloudFormation Resources
 package awscdkresourcesmongodbatlas
 
 
 // Method by which the provided username is authenticated.
 //
-// If no value is given, Atlas uses the default value of NONE.
+// Default value is `NONE`.
 type CfnDatabaseUserPropsLdapAuthType string
 
 const (

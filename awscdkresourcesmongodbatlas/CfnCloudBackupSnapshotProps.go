@@ -1,4 +1,3 @@
-// MongoDB Atlas CDK Construct Library for AWS CloudFormation Resources
 package awscdkresourcesmongodbatlas
 
 
@@ -20,10 +19,6 @@ type CfnCloudBackupSnapshotProps struct {
 	InstanceName *string `field:"optional" json:"instanceName" yaml:"instanceName"`
 	// Number of items that the response returns per page.
 	ItemsPerPage *float64 `field:"optional" json:"itemsPerPage" yaml:"itemsPerPage"`
-	// List of one or more Uniform Resource Locators (URLs) that point to API sub-resources, related API resources, or both.
-	//
-	// RFC 5988 outlines these relationships.
-	Links *[]*Link `field:"optional" json:"links" yaml:"links"`
 	// List that includes the snapshots and the cloud provider that stores the snapshots.
 	//
 	// The resource returns this parameter when `"type" : "SHARDED_CLUSTER"`.

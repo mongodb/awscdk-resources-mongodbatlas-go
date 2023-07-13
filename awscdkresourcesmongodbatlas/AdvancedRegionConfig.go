@@ -1,4 +1,3 @@
-// MongoDB Atlas CDK Construct Library for AWS CloudFormation Resources
 package awscdkresourcesmongodbatlas
 
 
@@ -13,8 +12,10 @@ type AdvancedRegionConfig struct {
 	AnalyticsAutoScaling *AdvancedAutoScaling `field:"optional" json:"analyticsAutoScaling" yaml:"analyticsAutoScaling"`
 	AnalyticsSpecs *Specs `field:"optional" json:"analyticsSpecs" yaml:"analyticsSpecs"`
 	AutoScaling *AdvancedAutoScaling `field:"optional" json:"autoScaling" yaml:"autoScaling"`
+	BackingProviderName *string `field:"optional" json:"backingProviderName" yaml:"backingProviderName"`
 	ElectableSpecs *Specs `field:"optional" json:"electableSpecs" yaml:"electableSpecs"`
 	Priority *float64 `field:"optional" json:"priority" yaml:"priority"`
+	ProviderName AdvancedRegionConfigProviderName `field:"optional" json:"providerName" yaml:"providerName"`
 	ReadOnlySpecs *Specs `field:"optional" json:"readOnlySpecs" yaml:"readOnlySpecs"`
 	RegionName *string `field:"optional" json:"regionName" yaml:"regionName"`
 }

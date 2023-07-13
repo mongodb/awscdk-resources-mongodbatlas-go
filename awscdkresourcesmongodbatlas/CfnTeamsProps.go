@@ -1,4 +1,3 @@
-// MongoDB Atlas CDK Construct Library for AWS CloudFormation Resources
 package awscdkresourcesmongodbatlas
 
 
@@ -20,5 +19,7 @@ type CfnTeamsProps struct {
 	RoleNames *[]CfnTeamsPropsRoleNames `field:"optional" json:"roleNames" yaml:"roleNames"`
 	// One or more organization- or project-level roles to assign to the MongoDB Cloud user.
 	Usernames *[]*string `field:"optional" json:"usernames" yaml:"usernames"`
+	// List of returned documents that MongoDB Cloud provides when completing this request.
+	Users *[]*AtlasUser `field:"optional" json:"users" yaml:"users"`
 }
 

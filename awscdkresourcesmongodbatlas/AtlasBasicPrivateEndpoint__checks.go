@@ -1,6 +1,5 @@
 //go:build !no_runtime_type_checking
 
-// MongoDB Atlas CDK Construct Library for AWS CloudFormation Resources
 package awscdkresourcesmongodbatlas
 
 import (

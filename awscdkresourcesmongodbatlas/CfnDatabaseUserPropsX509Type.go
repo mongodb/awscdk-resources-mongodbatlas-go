@@ -1,10 +1,9 @@
-// MongoDB Atlas CDK Construct Library for AWS CloudFormation Resources
 package awscdkresourcesmongodbatlas
 
 
 // Method that briefs who owns the certificate provided.
 //
-// If no value is given while using X509Type, Atlas uses the default value of MANAGED.
+// Default value is `NONE`.
 type CfnDatabaseUserPropsX509Type string
 
 const (

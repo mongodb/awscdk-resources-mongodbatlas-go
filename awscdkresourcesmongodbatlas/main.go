@@ -1,3 +1,4 @@
+// MongoDB Atlas CDK Construct Library for AWS CloudFormation Resources
 package awscdkresourcesmongodbatlas
 
 import (
@@ -22,6 +23,16 @@ func init() {
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.AdvancedRegionConfig",
 		reflect.TypeOf((*AdvancedRegionConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterEnum(
+		"awscdk-resources-mongodbatlas.AdvancedRegionConfigProviderName",
+		reflect.TypeOf((*AdvancedRegionConfigProviderName)(nil)).Elem(),
+		map[string]interface{}{
+			"AWS": AdvancedRegionConfigProviderName_AWS,
+			"GCP": AdvancedRegionConfigProviderName_GCP,
+			"AZURE": AdvancedRegionConfigProviderName_AZURE,
+			"TENANT": AdvancedRegionConfigProviderName_TENANT,
+		},
 	)
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.AdvancedReplicationSpec",
@@ -190,6 +201,31 @@ func init() {
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.AtlasEncryptionAtRestProps",
 		reflect.TypeOf((*AtlasEncryptionAtRestProps)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.AtlasRole",
+		reflect.TypeOf((*AtlasRole)(nil)).Elem(),
+	)
+	_jsii_.RegisterEnum(
+		"awscdk-resources-mongodbatlas.AtlasRoleRoleName",
+		reflect.TypeOf((*AtlasRoleRoleName)(nil)).Elem(),
+		map[string]interface{}{
+			"ORG_OWNER": AtlasRoleRoleName_ORG_OWNER,
+			"ORG_MEMBER": AtlasRoleRoleName_ORG_MEMBER,
+			"ORG_GROUP_CREATOR": AtlasRoleRoleName_ORG_GROUP_CREATOR,
+			"ORG_BILLING_ADMIN": AtlasRoleRoleName_ORG_BILLING_ADMIN,
+			"ORG_READ_ONLY": AtlasRoleRoleName_ORG_READ_ONLY,
+			"GROUP_CLUSTER_MANAGER": AtlasRoleRoleName_GROUP_CLUSTER_MANAGER,
+			"GROUP_DATA_ACCESS_ADMIN": AtlasRoleRoleName_GROUP_DATA_ACCESS_ADMIN,
+			"GROUP_DATA_ACCESS_READ_ONLY": AtlasRoleRoleName_GROUP_DATA_ACCESS_READ_ONLY,
+			"GROUP_DATA_ACCESS_READ_WRITE": AtlasRoleRoleName_GROUP_DATA_ACCESS_READ_WRITE,
+			"GROUP_OWNER": AtlasRoleRoleName_GROUP_OWNER,
+			"GROUP_READ_ONLY": AtlasRoleRoleName_GROUP_READ_ONLY,
+		},
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.AtlasUser",
+		reflect.TypeOf((*AtlasUser)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.AuthConfig",
@@ -929,7 +965,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "attrRemoveAllZoneMapping", GoGetter: "AttrRemoveAllZoneMapping"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},
@@ -1719,7 +1754,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "attrTeamId", GoGetter: "AttrTeamId"},
-			_jsii_.MemberProperty{JsiiProperty: "attrUsers", GoGetter: "AttrUsers"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},
@@ -1898,8 +1932,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "attrLinks", GoGetter: "AttrLinks"},
-			_jsii_.MemberProperty{JsiiProperty: "attrResults", GoGetter: "AttrResults"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},

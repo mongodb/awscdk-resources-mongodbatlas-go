@@ -1,4 +1,3 @@
-// MongoDB Atlas CDK Construct Library for AWS CloudFormation Resources
 package awscdkresourcesmongodbatlas
 
 
@@ -18,8 +17,8 @@ type DatabaseConfig struct {
 	// preimages](https://www.mongodb.com/docs/atlas/app-services/mongodb/preimages/)
 	// for your cluster to include these snapshots.
 	FullDocumentBeforeChange *bool `field:"optional" json:"fullDocumentBeforeChange" yaml:"fullDocumentBeforeChange"`
-	// A [$match](https://www.mongodb.com/docs/manual/reference/operator/aggregation/match) expression filters change events. The trigger will only fire if the expression evaluates to true for a given change event.
-	Match interface{} `field:"optional" json:"match" yaml:"match"`
+	// stringify version of a [$match](https://www.mongodb.com/docs/manual/reference/operator/aggregation/match) expression filters change events. The trigger will only fire if the expression evaluates to true for a given change event.
+	Match *string `field:"optional" json:"match" yaml:"match"`
 	// The type(s) of MongoDB change event that the trigger listens for.
 	OperationTypes *[]DatabaseConfigOperationTypes `field:"optional" json:"operationTypes" yaml:"operationTypes"`
 	// The _id value of a linked MongoDB data source.

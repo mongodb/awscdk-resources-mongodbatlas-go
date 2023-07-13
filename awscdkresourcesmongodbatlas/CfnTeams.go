@@ -1,4 +1,3 @@
-// MongoDB Atlas CDK Construct Library for AWS CloudFormation Resources
 package awscdkresourcesmongodbatlas
 
 import (
@@ -15,8 +14,6 @@ type CfnTeams interface {
 	awscdk.CfnResource
 	// Attribute `MongoDB::Atlas::Teams.TeamId`.
 	AttrTeamId() *string
-	// Attribute `MongoDB::Atlas::Teams.Users`.
-	AttrUsers() *[]interface{}
 	// Options for this resource, such as condition, update policy etc.
 	CfnOptions() awscdk.ICfnResourceOptions
 	CfnProperties() *map[string]interface{}
@@ -197,16 +194,6 @@ func (j *jsiiProxy_CfnTeams) AttrTeamId() *string {
 	_jsii_.Get(
 		j,
 		"attrTeamId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CfnTeams) AttrUsers() *[]interface{} {
-	var returns *[]interface{}
-	_jsii_.Get(
-		j,
-		"attrUsers",
 		&returns,
 	)
 	return returns

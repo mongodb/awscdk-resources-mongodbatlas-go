@@ -1,4 +1,3 @@
-// MongoDB Atlas CDK Construct Library for AWS CloudFormation Resources
 package awscdkresourcesmongodbatlas
 
 
@@ -20,6 +19,10 @@ type ProcessArgs struct {
 	MinimumEnabledTlsProtocol *string `field:"optional" json:"minimumEnabledTlsProtocol" yaml:"minimumEnabledTlsProtocol"`
 	// Flag that indicates whether the cluster disables executing any query that requires a collection scan to return results.
 	NoTableScan *bool `field:"optional" json:"noTableScan" yaml:"noTableScan"`
+	// Minimum retention window for cluster's oplog expressed in hours.
+	//
+	// A value of null indicates that the cluster uses the default minimum oplog window that MongoDB Cloud calculates.
+	OplogMinRetentionHours *float64 `field:"optional" json:"oplogMinRetentionHours" yaml:"oplogMinRetentionHours"`
 	// Storage limit of cluster's oplog expressed in megabytes.
 	//
 	// A value of null indicates that the cluster uses the default oplog size that MongoDB Cloud calculates.

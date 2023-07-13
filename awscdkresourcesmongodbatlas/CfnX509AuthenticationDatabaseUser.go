@@ -1,4 +1,3 @@
-// MongoDB Atlas CDK Construct Library for AWS CloudFormation Resources
 package awscdkresourcesmongodbatlas
 
 import (
@@ -13,10 +12,6 @@ import (
 // A CloudFormation `MongoDB::Atlas::X509AuthenticationDatabaseUser`.
 type CfnX509AuthenticationDatabaseUser interface {
 	awscdk.CfnResource
-	// Attribute `MongoDB::Atlas::X509AuthenticationDatabaseUser.Links`.
-	AttrLinks() *[]interface{}
-	// Attribute `MongoDB::Atlas::X509AuthenticationDatabaseUser.Results`.
-	AttrResults() *[]interface{}
 	// Options for this resource, such as condition, update policy etc.
 	CfnOptions() awscdk.ICfnResourceOptions
 	CfnProperties() *map[string]interface{}
@@ -190,26 +185,6 @@ type CfnX509AuthenticationDatabaseUser interface {
 // The jsii proxy struct for CfnX509AuthenticationDatabaseUser
 type jsiiProxy_CfnX509AuthenticationDatabaseUser struct {
 	internal.Type__awscdkCfnResource
-}
-
-func (j *jsiiProxy_CfnX509AuthenticationDatabaseUser) AttrLinks() *[]interface{} {
-	var returns *[]interface{}
-	_jsii_.Get(
-		j,
-		"attrLinks",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CfnX509AuthenticationDatabaseUser) AttrResults() *[]interface{} {
-	var returns *[]interface{}
-	_jsii_.Get(
-		j,
-		"attrResults",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_CfnX509AuthenticationDatabaseUser) CfnOptions() awscdk.ICfnResourceOptions {

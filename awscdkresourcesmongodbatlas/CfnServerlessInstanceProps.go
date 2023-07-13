@@ -1,4 +1,3 @@
-// MongoDB Atlas CDK Construct Library for AWS CloudFormation Resources
 package awscdkresourcesmongodbatlas
 
 
@@ -14,10 +13,6 @@ type CfnServerlessInstanceProps struct {
 	IncludeCount *bool `field:"optional" json:"includeCount" yaml:"includeCount"`
 	// Number of items that the response returns per page.
 	ItemsPerPage *float64 `field:"optional" json:"itemsPerPage" yaml:"itemsPerPage"`
-	// List of one or more Uniform Resource Locators (URLs) that point to API sub-resources, related API resources, or both.
-	//
-	// RFC 5988 outlines these relationships.
-	Links *[]*Link `field:"optional" json:"links" yaml:"links"`
 	// Human-readable label that identifies the serverless instance.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Number of the page that displays the current set of the total objects that the response returns.
