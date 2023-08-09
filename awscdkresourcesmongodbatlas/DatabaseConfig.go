@@ -21,6 +21,8 @@ type DatabaseConfig struct {
 	Match *string `field:"optional" json:"match" yaml:"match"`
 	// The type(s) of MongoDB change event that the trigger listens for.
 	OperationTypes *[]DatabaseConfigOperationTypes `field:"optional" json:"operationTypes" yaml:"operationTypes"`
+	// stringify version of a [$project](https://www.mongodb.com/docs/manual/reference/operator/aggregation/project/) expressions to limit the data included in each event.
+	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The _id value of a linked MongoDB data source.
 	//
 	// See [Get a Data Source](#operation/adminGetService).
