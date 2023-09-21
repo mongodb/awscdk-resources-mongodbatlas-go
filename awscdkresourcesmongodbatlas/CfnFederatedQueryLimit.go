@@ -9,15 +9,17 @@ import (
 	"github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/internal"
 )
 
-// A CloudFormation `MongoDB::Atlas::Project`.
-type CfnProject interface {
+// A CloudFormation `MongoDB::Atlas::FederatedQueryLimit`.
+type CfnFederatedQueryLimit interface {
 	awscdk.CfnResource
-	// Attribute `MongoDB::Atlas::Project.Created`.
-	AttrCreated() *string
-	// Attribute `MongoDB::Atlas::Project.Id`.
-	AttrId() *string
-	// Attribute `MongoDB::Atlas::Project.ProjectOwnerId`.
-	AttrProjectOwnerId() *string
+	// Attribute `MongoDB::Atlas::FederatedQueryLimit.CurrentUsage`.
+	AttrCurrentUsage() *string
+	// Attribute `MongoDB::Atlas::FederatedQueryLimit.DefaultLimit`.
+	AttrDefaultLimit() *string
+	// Attribute `MongoDB::Atlas::FederatedQueryLimit.LastModifiedDate`.
+	AttrLastModifiedDate() *string
+	// Attribute `MongoDB::Atlas::FederatedQueryLimit.MaximumLimit`.
+	AttrMaximumLimit() *string
 	// Options for this resource, such as condition, update policy etc.
 	CfnOptions() awscdk.ICfnResourceOptions
 	CfnProperties() *map[string]interface{}
@@ -40,7 +42,7 @@ type CfnProject interface {
 	// The tree node.
 	Node() constructs.Node
 	// Resource props.
-	Props() *CfnProjectProps
+	Props() *CfnFederatedQueryLimitProps
 	// Return a string that will be resolved to a CloudFormation `{ Ref }` for this element.
 	//
 	// If, by any chance, the intrinsic reference of a resource is not a string, you could
@@ -188,42 +190,52 @@ type CfnProject interface {
 	ValidateProperties(_properties interface{})
 }
 
-// The jsii proxy struct for CfnProject
-type jsiiProxy_CfnProject struct {
+// The jsii proxy struct for CfnFederatedQueryLimit
+type jsiiProxy_CfnFederatedQueryLimit struct {
 	internal.Type__awscdkCfnResource
 }
 
-func (j *jsiiProxy_CfnProject) AttrCreated() *string {
+func (j *jsiiProxy_CfnFederatedQueryLimit) AttrCurrentUsage() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"attrCreated",
+		"attrCurrentUsage",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) AttrId() *string {
+func (j *jsiiProxy_CfnFederatedQueryLimit) AttrDefaultLimit() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"attrId",
+		"attrDefaultLimit",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) AttrProjectOwnerId() *string {
+func (j *jsiiProxy_CfnFederatedQueryLimit) AttrLastModifiedDate() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"attrProjectOwnerId",
+		"attrLastModifiedDate",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) CfnOptions() awscdk.ICfnResourceOptions {
+func (j *jsiiProxy_CfnFederatedQueryLimit) AttrMaximumLimit() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attrMaximumLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnFederatedQueryLimit) CfnOptions() awscdk.ICfnResourceOptions {
 	var returns awscdk.ICfnResourceOptions
 	_jsii_.Get(
 		j,
@@ -233,7 +245,7 @@ func (j *jsiiProxy_CfnProject) CfnOptions() awscdk.ICfnResourceOptions {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) CfnProperties() *map[string]interface{} {
+func (j *jsiiProxy_CfnFederatedQueryLimit) CfnProperties() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -243,7 +255,7 @@ func (j *jsiiProxy_CfnProject) CfnProperties() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) CfnResourceType() *string {
+func (j *jsiiProxy_CfnFederatedQueryLimit) CfnResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -253,7 +265,7 @@ func (j *jsiiProxy_CfnProject) CfnResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) CreationStack() *[]*string {
+func (j *jsiiProxy_CfnFederatedQueryLimit) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -263,7 +275,7 @@ func (j *jsiiProxy_CfnProject) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) LogicalId() *string {
+func (j *jsiiProxy_CfnFederatedQueryLimit) LogicalId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -273,7 +285,7 @@ func (j *jsiiProxy_CfnProject) LogicalId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) Node() constructs.Node {
+func (j *jsiiProxy_CfnFederatedQueryLimit) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -283,8 +295,8 @@ func (j *jsiiProxy_CfnProject) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) Props() *CfnProjectProps {
-	var returns *CfnProjectProps
+func (j *jsiiProxy_CfnFederatedQueryLimit) Props() *CfnFederatedQueryLimitProps {
+	var returns *CfnFederatedQueryLimitProps
 	_jsii_.Get(
 		j,
 		"props",
@@ -293,7 +305,7 @@ func (j *jsiiProxy_CfnProject) Props() *CfnProjectProps {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) Ref() *string {
+func (j *jsiiProxy_CfnFederatedQueryLimit) Ref() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -303,7 +315,7 @@ func (j *jsiiProxy_CfnProject) Ref() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) Stack() awscdk.Stack {
+func (j *jsiiProxy_CfnFederatedQueryLimit) Stack() awscdk.Stack {
 	var returns awscdk.Stack
 	_jsii_.Get(
 		j,
@@ -313,7 +325,7 @@ func (j *jsiiProxy_CfnProject) Stack() awscdk.Stack {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) UpdatedProperites() *map[string]interface{} {
+func (j *jsiiProxy_CfnFederatedQueryLimit) UpdatedProperites() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -323,7 +335,7 @@ func (j *jsiiProxy_CfnProject) UpdatedProperites() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) UpdatedProperties() *map[string]interface{} {
+func (j *jsiiProxy_CfnFederatedQueryLimit) UpdatedProperties() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -334,17 +346,17 @@ func (j *jsiiProxy_CfnProject) UpdatedProperties() *map[string]interface{} {
 }
 
 
-// Create a new `MongoDB::Atlas::Project`.
-func NewCfnProject(scope constructs.Construct, id *string, props *CfnProjectProps) CfnProject {
+// Create a new `MongoDB::Atlas::FederatedQueryLimit`.
+func NewCfnFederatedQueryLimit(scope constructs.Construct, id *string, props *CfnFederatedQueryLimitProps) CfnFederatedQueryLimit {
 	_init_.Initialize()
 
-	if err := validateNewCfnProjectParameters(scope, id, props); err != nil {
+	if err := validateNewCfnFederatedQueryLimitParameters(scope, id, props); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_CfnProject{}
+	j := jsiiProxy_CfnFederatedQueryLimit{}
 
 	_jsii_.Create(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnFederatedQueryLimit",
 		[]interface{}{scope, id, props},
 		&j,
 	)
@@ -352,12 +364,12 @@ func NewCfnProject(scope constructs.Construct, id *string, props *CfnProjectProp
 	return &j
 }
 
-// Create a new `MongoDB::Atlas::Project`.
-func NewCfnProject_Override(c CfnProject, scope constructs.Construct, id *string, props *CfnProjectProps) {
+// Create a new `MongoDB::Atlas::FederatedQueryLimit`.
+func NewCfnFederatedQueryLimit_Override(c CfnFederatedQueryLimit, scope constructs.Construct, id *string, props *CfnFederatedQueryLimitProps) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnFederatedQueryLimit",
 		[]interface{}{scope, id, props},
 		c,
 	)
@@ -369,16 +381,16 @@ func NewCfnProject_Override(c CfnProject, scope constructs.Construct, id *string
 // versions of this library to be included in the same stack.
 //
 // Returns: The construct as a stack element or undefined if it is not a stack element.
-func CfnProject_IsCfnElement(x interface{}) *bool {
+func CfnFederatedQueryLimit_IsCfnElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnProject_IsCfnElementParameters(x); err != nil {
+	if err := validateCfnFederatedQueryLimit_IsCfnElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnFederatedQueryLimit",
 		"isCfnElement",
 		[]interface{}{x},
 		&returns,
@@ -388,16 +400,16 @@ func CfnProject_IsCfnElement(x interface{}) *bool {
 }
 
 // Check whether the given construct is a CfnResource.
-func CfnProject_IsCfnResource(construct constructs.IConstruct) *bool {
+func CfnFederatedQueryLimit_IsCfnResource(construct constructs.IConstruct) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnProject_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnFederatedQueryLimit_IsCfnResourceParameters(construct); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnFederatedQueryLimit",
 		"isCfnResource",
 		[]interface{}{construct},
 		&returns,
@@ -410,16 +422,16 @@ func CfnProject_IsCfnResource(construct constructs.IConstruct) *bool {
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
 // Deprecated: use `x instanceof Construct` instead.
-func CfnProject_IsConstruct(x interface{}) *bool {
+func CfnFederatedQueryLimit_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnProject_IsConstructParameters(x); err != nil {
+	if err := validateCfnFederatedQueryLimit_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnFederatedQueryLimit",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -428,18 +440,18 @@ func CfnProject_IsConstruct(x interface{}) *bool {
 	return returns
 }
 
-func CfnProject_CFN_RESOURCE_TYPE_NAME() *string {
+func CfnFederatedQueryLimit_CFN_RESOURCE_TYPE_NAME() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnFederatedQueryLimit",
 		"CFN_RESOURCE_TYPE_NAME",
 		&returns,
 	)
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) AddDeletionOverride(path *string) {
+func (c *jsiiProxy_CfnFederatedQueryLimit) AddDeletionOverride(path *string) {
 	if err := c.validateAddDeletionOverrideParameters(path); err != nil {
 		panic(err)
 	}
@@ -450,7 +462,7 @@ func (c *jsiiProxy_CfnProject) AddDeletionOverride(path *string) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddDependency(target awscdk.CfnResource) {
+func (c *jsiiProxy_CfnFederatedQueryLimit) AddDependency(target awscdk.CfnResource) {
 	if err := c.validateAddDependencyParameters(target); err != nil {
 		panic(err)
 	}
@@ -461,7 +473,7 @@ func (c *jsiiProxy_CfnProject) AddDependency(target awscdk.CfnResource) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddDependsOn(target awscdk.CfnResource) {
+func (c *jsiiProxy_CfnFederatedQueryLimit) AddDependsOn(target awscdk.CfnResource) {
 	if err := c.validateAddDependsOnParameters(target); err != nil {
 		panic(err)
 	}
@@ -472,7 +484,7 @@ func (c *jsiiProxy_CfnProject) AddDependsOn(target awscdk.CfnResource) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddMetadata(key *string, value interface{}) {
+func (c *jsiiProxy_CfnFederatedQueryLimit) AddMetadata(key *string, value interface{}) {
 	if err := c.validateAddMetadataParameters(key, value); err != nil {
 		panic(err)
 	}
@@ -483,7 +495,7 @@ func (c *jsiiProxy_CfnProject) AddMetadata(key *string, value interface{}) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CfnFederatedQueryLimit) AddOverride(path *string, value interface{}) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
@@ -494,7 +506,7 @@ func (c *jsiiProxy_CfnProject) AddOverride(path *string, value interface{}) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddPropertyDeletionOverride(propertyPath *string) {
+func (c *jsiiProxy_CfnFederatedQueryLimit) AddPropertyDeletionOverride(propertyPath *string) {
 	if err := c.validateAddPropertyDeletionOverrideParameters(propertyPath); err != nil {
 		panic(err)
 	}
@@ -505,7 +517,7 @@ func (c *jsiiProxy_CfnProject) AddPropertyDeletionOverride(propertyPath *string)
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddPropertyOverride(propertyPath *string, value interface{}) {
+func (c *jsiiProxy_CfnFederatedQueryLimit) AddPropertyOverride(propertyPath *string, value interface{}) {
 	if err := c.validateAddPropertyOverrideParameters(propertyPath, value); err != nil {
 		panic(err)
 	}
@@ -516,7 +528,7 @@ func (c *jsiiProxy_CfnProject) AddPropertyOverride(propertyPath *string, value i
 	)
 }
 
-func (c *jsiiProxy_CfnProject) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, options *awscdk.RemovalPolicyOptions) {
+func (c *jsiiProxy_CfnFederatedQueryLimit) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, options *awscdk.RemovalPolicyOptions) {
 	if err := c.validateApplyRemovalPolicyParameters(options); err != nil {
 		panic(err)
 	}
@@ -527,7 +539,7 @@ func (c *jsiiProxy_CfnProject) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, o
 	)
 }
 
-func (c *jsiiProxy_CfnProject) GetAtt(attributeName *string, typeHint awscdk.ResolutionTypeHint) awscdk.Reference {
+func (c *jsiiProxy_CfnFederatedQueryLimit) GetAtt(attributeName *string, typeHint awscdk.ResolutionTypeHint) awscdk.Reference {
 	if err := c.validateGetAttParameters(attributeName); err != nil {
 		panic(err)
 	}
@@ -543,7 +555,7 @@ func (c *jsiiProxy_CfnProject) GetAtt(attributeName *string, typeHint awscdk.Res
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) GetMetadata(key *string) interface{} {
+func (c *jsiiProxy_CfnFederatedQueryLimit) GetMetadata(key *string) interface{} {
 	if err := c.validateGetMetadataParameters(key); err != nil {
 		panic(err)
 	}
@@ -559,7 +571,7 @@ func (c *jsiiProxy_CfnProject) GetMetadata(key *string) interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ObtainDependencies() *[]interface{} {
+func (c *jsiiProxy_CfnFederatedQueryLimit) ObtainDependencies() *[]interface{} {
 	var returns *[]interface{}
 
 	_jsii_.Invoke(
@@ -572,7 +584,7 @@ func (c *jsiiProxy_CfnProject) ObtainDependencies() *[]interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ObtainResourceDependencies() *[]awscdk.CfnResource {
+func (c *jsiiProxy_CfnFederatedQueryLimit) ObtainResourceDependencies() *[]awscdk.CfnResource {
 	var returns *[]awscdk.CfnResource
 
 	_jsii_.Invoke(
@@ -585,7 +597,7 @@ func (c *jsiiProxy_CfnProject) ObtainResourceDependencies() *[]awscdk.CfnResourc
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) OverrideLogicalId(newLogicalId *string) {
+func (c *jsiiProxy_CfnFederatedQueryLimit) OverrideLogicalId(newLogicalId *string) {
 	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
@@ -596,7 +608,7 @@ func (c *jsiiProxy_CfnProject) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) RemoveDependency(target awscdk.CfnResource) {
+func (c *jsiiProxy_CfnFederatedQueryLimit) RemoveDependency(target awscdk.CfnResource) {
 	if err := c.validateRemoveDependencyParameters(target); err != nil {
 		panic(err)
 	}
@@ -607,7 +619,7 @@ func (c *jsiiProxy_CfnProject) RemoveDependency(target awscdk.CfnResource) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) RenderProperties(props *map[string]interface{}) *map[string]interface{} {
+func (c *jsiiProxy_CfnFederatedQueryLimit) RenderProperties(props *map[string]interface{}) *map[string]interface{} {
 	if err := c.validateRenderPropertiesParameters(props); err != nil {
 		panic(err)
 	}
@@ -623,7 +635,7 @@ func (c *jsiiProxy_CfnProject) RenderProperties(props *map[string]interface{}) *
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ReplaceDependency(target awscdk.CfnResource, newTarget awscdk.CfnResource) {
+func (c *jsiiProxy_CfnFederatedQueryLimit) ReplaceDependency(target awscdk.CfnResource, newTarget awscdk.CfnResource) {
 	if err := c.validateReplaceDependencyParameters(target, newTarget); err != nil {
 		panic(err)
 	}
@@ -634,7 +646,7 @@ func (c *jsiiProxy_CfnProject) ReplaceDependency(target awscdk.CfnResource, newT
 	)
 }
 
-func (c *jsiiProxy_CfnProject) ShouldSynthesize() *bool {
+func (c *jsiiProxy_CfnFederatedQueryLimit) ShouldSynthesize() *bool {
 	var returns *bool
 
 	_jsii_.Invoke(
@@ -647,7 +659,7 @@ func (c *jsiiProxy_CfnProject) ShouldSynthesize() *bool {
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ToString() *string {
+func (c *jsiiProxy_CfnFederatedQueryLimit) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -660,7 +672,7 @@ func (c *jsiiProxy_CfnProject) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ValidateProperties(_properties interface{}) {
+func (c *jsiiProxy_CfnFederatedQueryLimit) ValidateProperties(_properties interface{}) {
 	if err := c.validateValidatePropertiesParameters(_properties); err != nil {
 		panic(err)
 	}

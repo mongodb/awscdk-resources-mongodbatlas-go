@@ -2,6 +2,8 @@ package awscdkresourcesmongodbatlas
 
 
 type ProjectProps struct {
+	// Default: auto-generated.
+	//
 	OrgId *string `field:"required" json:"orgId" yaml:"orgId"`
 	ClusterCount *float64 `field:"optional" json:"clusterCount" yaml:"clusterCount"`
 	Name *string `field:"optional" json:"name" yaml:"name"`

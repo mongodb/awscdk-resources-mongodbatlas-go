@@ -31,5 +31,9 @@ type ProcessArgs struct {
 	SampleRefreshIntervalBiConnector *float64 `field:"optional" json:"sampleRefreshIntervalBiConnector" yaml:"sampleRefreshIntervalBiConnector"`
 	// Interval in seconds at which the mongosqld process re-samples data to create its relational schema.
 	SampleSizeBiConnector *float64 `field:"optional" json:"sampleSizeBiConnector" yaml:"sampleSizeBiConnector"`
+	// Lifetime, in seconds, of multi-document transactions.
+	//
+	// Atlas considers the transactions that exceed this limit as expired and so aborts them through a periodic cleanup process.
+	TransactionLifetimeLimitSeconds *float64 `field:"optional" json:"transactionLifetimeLimitSeconds" yaml:"transactionLifetimeLimitSeconds"`
 }
 

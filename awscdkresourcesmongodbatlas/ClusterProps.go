@@ -6,12 +6,16 @@ type ClusterProps struct {
 	BackupEnabled *bool `field:"optional" json:"backupEnabled" yaml:"backupEnabled"`
 	BiConnector *CfnClusterPropsBiConnector `field:"optional" json:"biConnector" yaml:"biConnector"`
 	ClusterType *string `field:"optional" json:"clusterType" yaml:"clusterType"`
+	// Default: REPLICASET.
+	//
 	ConnectionStrings *ConnectionStrings `field:"optional" json:"connectionStrings" yaml:"connectionStrings"`
 	DiskSizeGb *float64 `field:"optional" json:"diskSizeGb" yaml:"diskSizeGb"`
 	EncryptionAtRestProvider CfnClusterPropsEncryptionAtRestProvider `field:"optional" json:"encryptionAtRestProvider" yaml:"encryptionAtRestProvider"`
 	Labels *[]*CfnClusterPropsLabels `field:"optional" json:"labels" yaml:"labels"`
 	MongoDbMajorVersion *string `field:"optional" json:"mongoDbMajorVersion" yaml:"mongoDbMajorVersion"`
 	Name *string `field:"optional" json:"name" yaml:"name"`
+	// Default: auto-generated.
+	//
 	Paused *bool `field:"optional" json:"paused" yaml:"paused"`
 	PitEnabled *bool `field:"optional" json:"pitEnabled" yaml:"pitEnabled"`
 	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`

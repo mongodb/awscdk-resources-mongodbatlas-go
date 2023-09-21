@@ -9,15 +9,9 @@ import (
 	"github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/internal"
 )
 
-// A CloudFormation `MongoDB::Atlas::Project`.
-type CfnProject interface {
+// A CloudFormation `MongoDB::Atlas::PrivatelinkEndpointServiceDataFederationOnlineArchive`.
+type CfnPrivatelinkEndpointServiceDataFederationOnlineArchive interface {
 	awscdk.CfnResource
-	// Attribute `MongoDB::Atlas::Project.Created`.
-	AttrCreated() *string
-	// Attribute `MongoDB::Atlas::Project.Id`.
-	AttrId() *string
-	// Attribute `MongoDB::Atlas::Project.ProjectOwnerId`.
-	AttrProjectOwnerId() *string
 	// Options for this resource, such as condition, update policy etc.
 	CfnOptions() awscdk.ICfnResourceOptions
 	CfnProperties() *map[string]interface{}
@@ -40,7 +34,7 @@ type CfnProject interface {
 	// The tree node.
 	Node() constructs.Node
 	// Resource props.
-	Props() *CfnProjectProps
+	Props() *CfnPrivatelinkEndpointServiceDataFederationOnlineArchiveProps
 	// Return a string that will be resolved to a CloudFormation `{ Ref }` for this element.
 	//
 	// If, by any chance, the intrinsic reference of a resource is not a string, you could
@@ -188,42 +182,12 @@ type CfnProject interface {
 	ValidateProperties(_properties interface{})
 }
 
-// The jsii proxy struct for CfnProject
-type jsiiProxy_CfnProject struct {
+// The jsii proxy struct for CfnPrivatelinkEndpointServiceDataFederationOnlineArchive
+type jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive struct {
 	internal.Type__awscdkCfnResource
 }
 
-func (j *jsiiProxy_CfnProject) AttrCreated() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attrCreated",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CfnProject) AttrId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attrId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CfnProject) AttrProjectOwnerId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attrProjectOwnerId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CfnProject) CfnOptions() awscdk.ICfnResourceOptions {
+func (j *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) CfnOptions() awscdk.ICfnResourceOptions {
 	var returns awscdk.ICfnResourceOptions
 	_jsii_.Get(
 		j,
@@ -233,7 +197,7 @@ func (j *jsiiProxy_CfnProject) CfnOptions() awscdk.ICfnResourceOptions {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) CfnProperties() *map[string]interface{} {
+func (j *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) CfnProperties() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -243,7 +207,7 @@ func (j *jsiiProxy_CfnProject) CfnProperties() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) CfnResourceType() *string {
+func (j *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) CfnResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -253,7 +217,7 @@ func (j *jsiiProxy_CfnProject) CfnResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) CreationStack() *[]*string {
+func (j *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -263,7 +227,7 @@ func (j *jsiiProxy_CfnProject) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) LogicalId() *string {
+func (j *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) LogicalId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -273,7 +237,7 @@ func (j *jsiiProxy_CfnProject) LogicalId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) Node() constructs.Node {
+func (j *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -283,8 +247,8 @@ func (j *jsiiProxy_CfnProject) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) Props() *CfnProjectProps {
-	var returns *CfnProjectProps
+func (j *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) Props() *CfnPrivatelinkEndpointServiceDataFederationOnlineArchiveProps {
+	var returns *CfnPrivatelinkEndpointServiceDataFederationOnlineArchiveProps
 	_jsii_.Get(
 		j,
 		"props",
@@ -293,7 +257,7 @@ func (j *jsiiProxy_CfnProject) Props() *CfnProjectProps {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) Ref() *string {
+func (j *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) Ref() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -303,7 +267,7 @@ func (j *jsiiProxy_CfnProject) Ref() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) Stack() awscdk.Stack {
+func (j *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) Stack() awscdk.Stack {
 	var returns awscdk.Stack
 	_jsii_.Get(
 		j,
@@ -313,7 +277,7 @@ func (j *jsiiProxy_CfnProject) Stack() awscdk.Stack {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) UpdatedProperites() *map[string]interface{} {
+func (j *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) UpdatedProperites() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -323,7 +287,7 @@ func (j *jsiiProxy_CfnProject) UpdatedProperites() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) UpdatedProperties() *map[string]interface{} {
+func (j *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) UpdatedProperties() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -334,17 +298,17 @@ func (j *jsiiProxy_CfnProject) UpdatedProperties() *map[string]interface{} {
 }
 
 
-// Create a new `MongoDB::Atlas::Project`.
-func NewCfnProject(scope constructs.Construct, id *string, props *CfnProjectProps) CfnProject {
+// Create a new `MongoDB::Atlas::PrivatelinkEndpointServiceDataFederationOnlineArchive`.
+func NewCfnPrivatelinkEndpointServiceDataFederationOnlineArchive(scope constructs.Construct, id *string, props *CfnPrivatelinkEndpointServiceDataFederationOnlineArchiveProps) CfnPrivatelinkEndpointServiceDataFederationOnlineArchive {
 	_init_.Initialize()
 
-	if err := validateNewCfnProjectParameters(scope, id, props); err != nil {
+	if err := validateNewCfnPrivatelinkEndpointServiceDataFederationOnlineArchiveParameters(scope, id, props); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_CfnProject{}
+	j := jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive{}
 
 	_jsii_.Create(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnPrivatelinkEndpointServiceDataFederationOnlineArchive",
 		[]interface{}{scope, id, props},
 		&j,
 	)
@@ -352,12 +316,12 @@ func NewCfnProject(scope constructs.Construct, id *string, props *CfnProjectProp
 	return &j
 }
 
-// Create a new `MongoDB::Atlas::Project`.
-func NewCfnProject_Override(c CfnProject, scope constructs.Construct, id *string, props *CfnProjectProps) {
+// Create a new `MongoDB::Atlas::PrivatelinkEndpointServiceDataFederationOnlineArchive`.
+func NewCfnPrivatelinkEndpointServiceDataFederationOnlineArchive_Override(c CfnPrivatelinkEndpointServiceDataFederationOnlineArchive, scope constructs.Construct, id *string, props *CfnPrivatelinkEndpointServiceDataFederationOnlineArchiveProps) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnPrivatelinkEndpointServiceDataFederationOnlineArchive",
 		[]interface{}{scope, id, props},
 		c,
 	)
@@ -369,16 +333,16 @@ func NewCfnProject_Override(c CfnProject, scope constructs.Construct, id *string
 // versions of this library to be included in the same stack.
 //
 // Returns: The construct as a stack element or undefined if it is not a stack element.
-func CfnProject_IsCfnElement(x interface{}) *bool {
+func CfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsCfnElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnProject_IsCfnElementParameters(x); err != nil {
+	if err := validateCfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsCfnElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnPrivatelinkEndpointServiceDataFederationOnlineArchive",
 		"isCfnElement",
 		[]interface{}{x},
 		&returns,
@@ -388,16 +352,16 @@ func CfnProject_IsCfnElement(x interface{}) *bool {
 }
 
 // Check whether the given construct is a CfnResource.
-func CfnProject_IsCfnResource(construct constructs.IConstruct) *bool {
+func CfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsCfnResource(construct constructs.IConstruct) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnProject_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsCfnResourceParameters(construct); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnPrivatelinkEndpointServiceDataFederationOnlineArchive",
 		"isCfnResource",
 		[]interface{}{construct},
 		&returns,
@@ -410,16 +374,16 @@ func CfnProject_IsCfnResource(construct constructs.IConstruct) *bool {
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
 // Deprecated: use `x instanceof Construct` instead.
-func CfnProject_IsConstruct(x interface{}) *bool {
+func CfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnProject_IsConstructParameters(x); err != nil {
+	if err := validateCfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnPrivatelinkEndpointServiceDataFederationOnlineArchive",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -428,18 +392,18 @@ func CfnProject_IsConstruct(x interface{}) *bool {
 	return returns
 }
 
-func CfnProject_CFN_RESOURCE_TYPE_NAME() *string {
+func CfnPrivatelinkEndpointServiceDataFederationOnlineArchive_CFN_RESOURCE_TYPE_NAME() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnPrivatelinkEndpointServiceDataFederationOnlineArchive",
 		"CFN_RESOURCE_TYPE_NAME",
 		&returns,
 	)
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) AddDeletionOverride(path *string) {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) AddDeletionOverride(path *string) {
 	if err := c.validateAddDeletionOverrideParameters(path); err != nil {
 		panic(err)
 	}
@@ -450,7 +414,7 @@ func (c *jsiiProxy_CfnProject) AddDeletionOverride(path *string) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddDependency(target awscdk.CfnResource) {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) AddDependency(target awscdk.CfnResource) {
 	if err := c.validateAddDependencyParameters(target); err != nil {
 		panic(err)
 	}
@@ -461,7 +425,7 @@ func (c *jsiiProxy_CfnProject) AddDependency(target awscdk.CfnResource) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddDependsOn(target awscdk.CfnResource) {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) AddDependsOn(target awscdk.CfnResource) {
 	if err := c.validateAddDependsOnParameters(target); err != nil {
 		panic(err)
 	}
@@ -472,7 +436,7 @@ func (c *jsiiProxy_CfnProject) AddDependsOn(target awscdk.CfnResource) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddMetadata(key *string, value interface{}) {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) AddMetadata(key *string, value interface{}) {
 	if err := c.validateAddMetadataParameters(key, value); err != nil {
 		panic(err)
 	}
@@ -483,7 +447,7 @@ func (c *jsiiProxy_CfnProject) AddMetadata(key *string, value interface{}) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) AddOverride(path *string, value interface{}) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
@@ -494,7 +458,7 @@ func (c *jsiiProxy_CfnProject) AddOverride(path *string, value interface{}) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddPropertyDeletionOverride(propertyPath *string) {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) AddPropertyDeletionOverride(propertyPath *string) {
 	if err := c.validateAddPropertyDeletionOverrideParameters(propertyPath); err != nil {
 		panic(err)
 	}
@@ -505,7 +469,7 @@ func (c *jsiiProxy_CfnProject) AddPropertyDeletionOverride(propertyPath *string)
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddPropertyOverride(propertyPath *string, value interface{}) {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) AddPropertyOverride(propertyPath *string, value interface{}) {
 	if err := c.validateAddPropertyOverrideParameters(propertyPath, value); err != nil {
 		panic(err)
 	}
@@ -516,7 +480,7 @@ func (c *jsiiProxy_CfnProject) AddPropertyOverride(propertyPath *string, value i
 	)
 }
 
-func (c *jsiiProxy_CfnProject) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, options *awscdk.RemovalPolicyOptions) {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, options *awscdk.RemovalPolicyOptions) {
 	if err := c.validateApplyRemovalPolicyParameters(options); err != nil {
 		panic(err)
 	}
@@ -527,7 +491,7 @@ func (c *jsiiProxy_CfnProject) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, o
 	)
 }
 
-func (c *jsiiProxy_CfnProject) GetAtt(attributeName *string, typeHint awscdk.ResolutionTypeHint) awscdk.Reference {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) GetAtt(attributeName *string, typeHint awscdk.ResolutionTypeHint) awscdk.Reference {
 	if err := c.validateGetAttParameters(attributeName); err != nil {
 		panic(err)
 	}
@@ -543,7 +507,7 @@ func (c *jsiiProxy_CfnProject) GetAtt(attributeName *string, typeHint awscdk.Res
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) GetMetadata(key *string) interface{} {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) GetMetadata(key *string) interface{} {
 	if err := c.validateGetMetadataParameters(key); err != nil {
 		panic(err)
 	}
@@ -559,7 +523,7 @@ func (c *jsiiProxy_CfnProject) GetMetadata(key *string) interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ObtainDependencies() *[]interface{} {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) ObtainDependencies() *[]interface{} {
 	var returns *[]interface{}
 
 	_jsii_.Invoke(
@@ -572,7 +536,7 @@ func (c *jsiiProxy_CfnProject) ObtainDependencies() *[]interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ObtainResourceDependencies() *[]awscdk.CfnResource {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) ObtainResourceDependencies() *[]awscdk.CfnResource {
 	var returns *[]awscdk.CfnResource
 
 	_jsii_.Invoke(
@@ -585,7 +549,7 @@ func (c *jsiiProxy_CfnProject) ObtainResourceDependencies() *[]awscdk.CfnResourc
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) OverrideLogicalId(newLogicalId *string) {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) OverrideLogicalId(newLogicalId *string) {
 	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
@@ -596,7 +560,7 @@ func (c *jsiiProxy_CfnProject) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) RemoveDependency(target awscdk.CfnResource) {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) RemoveDependency(target awscdk.CfnResource) {
 	if err := c.validateRemoveDependencyParameters(target); err != nil {
 		panic(err)
 	}
@@ -607,7 +571,7 @@ func (c *jsiiProxy_CfnProject) RemoveDependency(target awscdk.CfnResource) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) RenderProperties(props *map[string]interface{}) *map[string]interface{} {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) RenderProperties(props *map[string]interface{}) *map[string]interface{} {
 	if err := c.validateRenderPropertiesParameters(props); err != nil {
 		panic(err)
 	}
@@ -623,7 +587,7 @@ func (c *jsiiProxy_CfnProject) RenderProperties(props *map[string]interface{}) *
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ReplaceDependency(target awscdk.CfnResource, newTarget awscdk.CfnResource) {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) ReplaceDependency(target awscdk.CfnResource, newTarget awscdk.CfnResource) {
 	if err := c.validateReplaceDependencyParameters(target, newTarget); err != nil {
 		panic(err)
 	}
@@ -634,7 +598,7 @@ func (c *jsiiProxy_CfnProject) ReplaceDependency(target awscdk.CfnResource, newT
 	)
 }
 
-func (c *jsiiProxy_CfnProject) ShouldSynthesize() *bool {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) ShouldSynthesize() *bool {
 	var returns *bool
 
 	_jsii_.Invoke(
@@ -647,7 +611,7 @@ func (c *jsiiProxy_CfnProject) ShouldSynthesize() *bool {
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ToString() *string {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -660,7 +624,7 @@ func (c *jsiiProxy_CfnProject) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ValidateProperties(_properties interface{}) {
+func (c *jsiiProxy_CfnPrivatelinkEndpointServiceDataFederationOnlineArchive) ValidateProperties(_properties interface{}) {
 	if err := c.validateValidatePropertiesParameters(_properties); err != nil {
 		panic(err)
 	}

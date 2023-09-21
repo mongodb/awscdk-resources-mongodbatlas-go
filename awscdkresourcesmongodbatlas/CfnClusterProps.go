@@ -48,6 +48,10 @@ type CfnClusterProps struct {
 	//
 	// MongoDB Cloud supports Internet Security Research Group.
 	RootCertType *string `field:"optional" json:"rootCertType" yaml:"rootCertType"`
+	// List of settings that configure your cluster regions.
+	//
+	// For Global Clusters, each object in the array represents a zone where your clusters nodes deploy. For non-Global replica sets and sharded clusters, this array has one object representing where your clusters nodes deploy.
+	Tags *[]*Tag `field:"optional" json:"tags" yaml:"tags"`
 	// Flag that indicates whether termination protection is enabled on the cluster.
 	//
 	// If set to true, MongoDB Cloud won't delete the cluster. If set to false, MongoDB Cloud will delete the cluster.
