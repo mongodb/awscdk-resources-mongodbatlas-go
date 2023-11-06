@@ -2,18 +2,16 @@ package awscdkresourcesmongodbatlas
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/jsii"
+	_init_ "github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v2/jsii"
 
 	"github.com/aws/aws-cdk-go/awscdk/v2"
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/internal"
+	"github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v2/internal"
 )
 
 // A CloudFormation `MongoDB::Atlas::CloudBackUpRestoreJobs`.
 type CfnCloudBackUpRestoreJobs interface {
 	awscdk.CfnResource
-	// Attribute `MongoDB::Atlas::CloudBackUpRestoreJobs.CreatedAt`.
-	AttrCreatedAt() *string
 	// Attribute `MongoDB::Atlas::CloudBackUpRestoreJobs.DeliveryUrl`.
 	AttrDeliveryUrl() *[]*string
 	// Attribute `MongoDB::Atlas::CloudBackUpRestoreJobs.ExpiresAt`.
@@ -108,20 +106,20 @@ type CfnCloudBackUpRestoreJobs interface {
 	// would add the overrides
 	// ```json
 	// "Properties": {
-	//    "GlobalSecondaryIndexes": [
-	//      {
-	//        "Projection": {
-	//          "NonKeyAttributes": [ "myattribute" ]
-	//          ...
-	//        }
-	//        ...
-	//      },
-	//      {
-	//        "ProjectionType": "INCLUDE"
-	//        ...
-	//      },
-	//    ]
-	//    ...
+	//   "GlobalSecondaryIndexes": [
+	//     {
+	//       "Projection": {
+	//         "NonKeyAttributes": [ "myattribute" ]
+	//         ...
+	//       }
+	//       ...
+	//     },
+	//     {
+	//       "ProjectionType": "INCLUDE"
+	//       ...
+	//     },
+	//   ]
+	//   ...
 	// }
 	// ```
 	//
@@ -197,16 +195,6 @@ type CfnCloudBackUpRestoreJobs interface {
 // The jsii proxy struct for CfnCloudBackUpRestoreJobs
 type jsiiProxy_CfnCloudBackUpRestoreJobs struct {
 	internal.Type__awscdkCfnResource
-}
-
-func (j *jsiiProxy_CfnCloudBackUpRestoreJobs) AttrCreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attrCreatedAt",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_CfnCloudBackUpRestoreJobs) AttrDeliveryUrl() *[]*string {

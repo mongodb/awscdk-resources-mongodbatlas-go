@@ -2,18 +2,21 @@ package awscdkresourcesmongodbatlas
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/jsii"
+	_init_ "github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v2/jsii"
 
+	"github.com/aws/aws-cdk-go/awscdk/v2/awsec2"
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/internal"
+	"github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v2/internal"
 )
 
 type AtlasBasicPrivateEndpoint interface {
 	constructs.Construct
 	AtlasBasic() AtlasBasic
+	AwsPrivateEndpoint() awsec2.CfnVPCEndpoint
 	// The tree node.
 	Node() constructs.Node
-	PrivateEndpoint() CfnPrivateEndpoint
+	PrivateEndpointAws() CfnPrivateEndpointAws
+	PrivateEndpointService() CfnPrivateEndpointService
 	// Returns a string representation of this construct.
 	ToString() *string
 }
@@ -33,6 +36,16 @@ func (j *jsiiProxy_AtlasBasicPrivateEndpoint) AtlasBasic() AtlasBasic {
 	return returns
 }
 
+func (j *jsiiProxy_AtlasBasicPrivateEndpoint) AwsPrivateEndpoint() awsec2.CfnVPCEndpoint {
+	var returns awsec2.CfnVPCEndpoint
+	_jsii_.Get(
+		j,
+		"awsPrivateEndpoint",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AtlasBasicPrivateEndpoint) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -43,11 +56,21 @@ func (j *jsiiProxy_AtlasBasicPrivateEndpoint) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_AtlasBasicPrivateEndpoint) PrivateEndpoint() CfnPrivateEndpoint {
-	var returns CfnPrivateEndpoint
+func (j *jsiiProxy_AtlasBasicPrivateEndpoint) PrivateEndpointAws() CfnPrivateEndpointAws {
+	var returns CfnPrivateEndpointAws
 	_jsii_.Get(
 		j,
-		"privateEndpoint",
+		"privateEndpointAws",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AtlasBasicPrivateEndpoint) PrivateEndpointService() CfnPrivateEndpointService {
+	var returns CfnPrivateEndpointService
+	_jsii_.Get(
+		j,
+		"privateEndpointService",
 		&returns,
 	)
 	return returns

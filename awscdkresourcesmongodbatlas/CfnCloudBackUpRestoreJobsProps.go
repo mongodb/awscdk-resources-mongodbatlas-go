@@ -3,18 +3,24 @@ package awscdkresourcesmongodbatlas
 
 // Returns, starts, and cancels Cloud Backup restore jobs.
 type CfnCloudBackUpRestoreJobsProps struct {
-	// The name of the Atlas cluster whose snapshot you want to restore or you want to retrieve restore jobs.
-	ClusterName *string `field:"required" json:"clusterName" yaml:"clusterName"`
+	// Type of restore job to create.The value can be any one of download,automated or point_in_time.
+	DeliveryType CfnCloudBackUpRestoreJobsPropsDeliveryType `field:"required" json:"deliveryType" yaml:"deliveryType"`
+	// The instance name of the Serverless/Cluster whose snapshot you want to restore or you want to retrieve restore jobs.
+	InstanceName *string `field:"required" json:"instanceName" yaml:"instanceName"`
+	// Type of instance specified on the Instance Name serverless or cluster.
+	InstanceType CfnCloudBackUpRestoreJobsPropsInstanceType `field:"required" json:"instanceType" yaml:"instanceType"`
 	// The unique identifier of the project for the Atlas cluster.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
+	// Unique identifier of the source snapshot ID of the restore job.
+	SnapshotId *string `field:"required" json:"snapshotId" yaml:"snapshotId"`
 	// Indicates whether the restore job was canceled.
 	Cancelled *bool `field:"optional" json:"cancelled" yaml:"cancelled"`
-	// Type of restore job to create.The value can be any one of download,automated or point_in_time.
-	DeliveryType CfnCloudBackUpRestoreJobsPropsDeliveryType `field:"optional" json:"deliveryType" yaml:"deliveryType"`
+	// If set to true, the CloudFormation resource will wait until the job is completed, WARNING: if the snapshot has a big load of data, the cloud formation resource might take a long time to finish leading to high costs.
+	EnableSynchronousCreation *bool `field:"optional" json:"enableSynchronousCreation" yaml:"enableSynchronousCreation"`
 	// Indicates whether the restore job expired.
 	Expired *bool `field:"optional" json:"expired" yaml:"expired"`
-	// The instance name of the Serverless cluster whose snapshot you want to restore or you want to retrieve restore jobs.
-	InstanceName *string `field:"optional" json:"instanceName" yaml:"instanceName"`
+	// Indicates whether the restore job failed.
+	Failed *bool `field:"optional" json:"failed" yaml:"failed"`
 	// Oplog operation number from which to you want to restore this snapshot.
 	//
 	// This is the second part of an Oplog timestamp.
@@ -27,8 +33,8 @@ type CfnCloudBackUpRestoreJobsProps struct {
 	PointInTimeUtcSeconds *float64 `field:"optional" json:"pointInTimeUtcSeconds" yaml:"pointInTimeUtcSeconds"`
 	// Profile used to provide credentials information, (a secret with the cfn/atlas/profile/{Profile}, is required), if not provided default is used.
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
-	// Unique identifier of the source snapshot ID of the restore job.
-	SnapshotId *string `field:"optional" json:"snapshotId" yaml:"snapshotId"`
+	// Options that needs to be set to control the synchronous creation flow, this options need to be set if EnableSynchronousCreation is se to TRUE.
+	SynchronousCreationOptions *SynchronousCreationOptions `field:"optional" json:"synchronousCreationOptions" yaml:"synchronousCreationOptions"`
 	// Name of the target Atlas cluster to which the restore job restores the snapshot.
 	//
 	// Only visible if deliveryType is automated.

@@ -3,8 +3,10 @@ package awscdkresourcesmongodbatlas
 
 // Returns, takes, and removes Cloud Backup snapshots.
 type CfnCloudBackupSnapshotProps struct {
-	// Human-readable label that identifies the cluster.
-	ClusterName *string `field:"required" json:"clusterName" yaml:"clusterName"`
+	// The instance name of the Serverless/Cluster whose snapshot you want to restore or you want to retrieve restore snapshot.
+	InstanceName *string `field:"required" json:"instanceName" yaml:"instanceName"`
+	// Type of instance specified on the Instance Name serverless or cluster.
+	InstanceType CfnCloudBackupSnapshotPropsInstanceType `field:"required" json:"instanceType" yaml:"instanceType"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Human-readable phrase or sentence that explains the purpose of the snapshot.
@@ -15,8 +17,6 @@ type CfnCloudBackupSnapshotProps struct {
 	FrequencyType CfnCloudBackupSnapshotPropsFrequencyType `field:"optional" json:"frequencyType" yaml:"frequencyType"`
 	// Flag that indicates whether the response returns the total number of items (**totalCount**) in the response.
 	IncludeCount *bool `field:"optional" json:"includeCount" yaml:"includeCount"`
-	// Human-readable label that identifies the serverless instance.
-	InstanceName *string `field:"optional" json:"instanceName" yaml:"instanceName"`
 	// Number of items that the response returns per page.
 	ItemsPerPage *float64 `field:"optional" json:"itemsPerPage" yaml:"itemsPerPage"`
 	// List that includes the snapshots and the cloud provider that stores the snapshots.
