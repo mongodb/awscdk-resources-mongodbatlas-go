@@ -1,4 +1,4 @@
-module github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v2
+module github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v3
 
 go 1.18
 

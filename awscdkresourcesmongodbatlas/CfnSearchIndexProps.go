@@ -11,8 +11,6 @@ type CfnSearchIndexProps struct {
 	CollectionName *string `field:"required" json:"collectionName" yaml:"collectionName"`
 	// Human-readable label that identifies the database that contains the collection with one or more Atlas Search indexes.
 	Database *string `field:"required" json:"database" yaml:"database"`
-	// Index specifications for the collection's fields.
-	Mappings *ApiAtlasFtsMappingsViewManual `field:"required" json:"mappings" yaml:"mappings"`
 	// Specific pre-defined method chosen to convert database field text into searchable words.
 	//
 	// This conversion reduces the text of fields into the smallest units of text. These units are called a **term** or **token**. This process, known as tokenization, involves a variety of changes made to the text in fields:
@@ -28,6 +26,10 @@ type CfnSearchIndexProps struct {
 	Analyzer *string `field:"optional" json:"analyzer" yaml:"analyzer"`
 	// List of user-defined methods to convert database field text into searchable words.
 	Analyzers *[]*ApiAtlasFtsAnalyzersViewManual `field:"optional" json:"analyzers" yaml:"analyzers"`
+	// Array of [Fields](https://www.mongodb.com/docs/atlas/atlas-search/field-types/knn-vector/#std-label-fts-data-types-knn-vector) to configure this vectorSearch index. Stringify json representation of field with types and properties. Required for vector indexes. It must contain at least one **vector** type field.
+	Fields *string `field:"optional" json:"fields" yaml:"fields"`
+	// Index specifications for the collection's fields.
+	Mappings *ApiAtlasFtsMappingsViewManual `field:"optional" json:"mappings" yaml:"mappings"`
 	// Human-readable label that identifies this index.
 	//
 	// Within each namespace, names of all indexes in the namespace must be unique.
@@ -42,5 +44,9 @@ type CfnSearchIndexProps struct {
 	SearchAnalyzer *string `field:"optional" json:"searchAnalyzer" yaml:"searchAnalyzer"`
 	// Rule sets that map words to their synonyms in this index.
 	Synonyms *[]*ApiAtlasFtsSynonymMappingDefinitionView `field:"optional" json:"synonyms" yaml:"synonyms"`
+	// Type of index: **search** or **vectorSearch**.
+	//
+	// Default type is **search**.
+	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 
