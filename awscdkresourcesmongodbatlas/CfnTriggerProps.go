@@ -5,8 +5,12 @@ package awscdkresourcesmongodbatlas
 type CfnTriggerProps struct {
 	// App Services Application ID.
 	AppId *string `field:"required" json:"appId" yaml:"appId"`
+	// The trigger's name.
+	Name *string `field:"required" json:"name" yaml:"name"`
 	// Project Id for application services.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
+	// The trigger's type.
+	Type *string `field:"required" json:"type" yaml:"type"`
 	AuthTrigger *AuthConfig `field:"optional" json:"authTrigger" yaml:"authTrigger"`
 	DatabaseTrigger *DatabaseConfig `field:"optional" json:"databaseTrigger" yaml:"databaseTrigger"`
 	// If `true`, the trigger is disabled and does not listen for events or execute.
@@ -33,14 +37,10 @@ type CfnTriggerProps struct {
 	//
 	// For example, if you define `function_name`, the backend duplicates it to `event_processors.FUNCTION.function_name`.
 	FunctionName *string `field:"optional" json:"functionName" yaml:"functionName"`
-	// The trigger's name.
-	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The profile is defined in AWS Secret manager.
 	//
 	// See [Secret Manager Profile setup](../../../examples/profile-secret.yaml).
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
 	ScheduleTrigger *ScheduleConfig `field:"optional" json:"scheduleTrigger" yaml:"scheduleTrigger"`
-	// The trigger's type.
-	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

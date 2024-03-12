@@ -127,6 +127,10 @@ func init() {
 		"awscdk-resources-mongodbatlas.ApiPolicyView",
 		reflect.TypeOf((*ApiPolicyView)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.ApiSearchDeploymentSpec",
+		reflect.TypeOf((*ApiSearchDeploymentSpec)(nil)).Elem(),
+	)
 	_jsii_.RegisterClass(
 		"awscdk-resources-mongodbatlas.AtlasBasic",
 		reflect.TypeOf((*AtlasBasic)(nil)).Elem(),
@@ -290,6 +294,51 @@ func init() {
 		reflect.TypeOf((*AwsPrivateEndpointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
+		"awscdk-resources-mongodbatlas.CfnAccessListApiKey",
+		reflect.TypeOf((*CfnAccessListApiKey)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addDeletionOverride", GoMethod: "AddDeletionOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addDependency", GoMethod: "AddDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "addDependsOn", GoMethod: "AddDependsOn"},
+			_jsii_.MemberMethod{JsiiMethod: "addMetadata", GoMethod: "AddMetadata"},
+			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberMethod{JsiiMethod: "getAtt", GoMethod: "GetAtt"},
+			_jsii_.MemberMethod{JsiiMethod: "getMetadata", GoMethod: "GetMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "logicalId", GoGetter: "LogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "obtainDependencies", GoMethod: "ObtainDependencies"},
+			_jsii_.MemberMethod{JsiiMethod: "obtainResourceDependencies", GoMethod: "ObtainResourceDependencies"},
+			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "props", GoGetter: "Props"},
+			_jsii_.MemberProperty{JsiiProperty: "ref", GoGetter: "Ref"},
+			_jsii_.MemberMethod{JsiiMethod: "removeDependency", GoMethod: "RemoveDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "renderProperties", GoMethod: "RenderProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "replaceDependency", GoMethod: "ReplaceDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "shouldSynthesize", GoMethod: "ShouldSynthesize"},
+			_jsii_.MemberProperty{JsiiProperty: "stack", GoGetter: "Stack"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedProperites", GoGetter: "UpdatedProperites"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedProperties", GoGetter: "UpdatedProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "validateProperties", GoMethod: "ValidateProperties"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CfnAccessListApiKey{}
+			_jsii_.InitJsiiProxy(&j.Type__awscdkCfnResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.CfnAccessListApiKeyProps",
+		reflect.TypeOf((*CfnAccessListApiKeyProps)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
 		"awscdk-resources-mongodbatlas.CfnAlertConfiguration",
 		reflect.TypeOf((*CfnAlertConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -336,6 +385,55 @@ func init() {
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.CfnAlertConfigurationProps",
 		reflect.TypeOf((*CfnAlertConfigurationProps)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"awscdk-resources-mongodbatlas.CfnApiKey",
+		reflect.TypeOf((*CfnApiKey)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addDeletionOverride", GoMethod: "AddDeletionOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addDependency", GoMethod: "AddDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "addDependsOn", GoMethod: "AddDependsOn"},
+			_jsii_.MemberMethod{JsiiMethod: "addMetadata", GoMethod: "AddMetadata"},
+			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "attrAPIUserId", GoGetter: "AttrAPIUserId"},
+			_jsii_.MemberProperty{JsiiProperty: "attrAwsSecretArn", GoGetter: "AttrAwsSecretArn"},
+			_jsii_.MemberProperty{JsiiProperty: "attrPrivateKey", GoGetter: "AttrPrivateKey"},
+			_jsii_.MemberProperty{JsiiProperty: "attrPublicKey", GoGetter: "AttrPublicKey"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberMethod{JsiiMethod: "getAtt", GoMethod: "GetAtt"},
+			_jsii_.MemberMethod{JsiiMethod: "getMetadata", GoMethod: "GetMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "logicalId", GoGetter: "LogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "obtainDependencies", GoMethod: "ObtainDependencies"},
+			_jsii_.MemberMethod{JsiiMethod: "obtainResourceDependencies", GoMethod: "ObtainResourceDependencies"},
+			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "props", GoGetter: "Props"},
+			_jsii_.MemberProperty{JsiiProperty: "ref", GoGetter: "Ref"},
+			_jsii_.MemberMethod{JsiiMethod: "removeDependency", GoMethod: "RemoveDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "renderProperties", GoMethod: "RenderProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "replaceDependency", GoMethod: "ReplaceDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "shouldSynthesize", GoMethod: "ShouldSynthesize"},
+			_jsii_.MemberProperty{JsiiProperty: "stack", GoGetter: "Stack"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedProperites", GoGetter: "UpdatedProperites"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedProperties", GoGetter: "UpdatedProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "validateProperties", GoMethod: "ValidateProperties"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CfnApiKey{}
+			_jsii_.InitJsiiProxy(&j.Type__awscdkCfnResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.CfnApiKeyProps",
+		reflect.TypeOf((*CfnApiKeyProps)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
 		"awscdk-resources-mongodbatlas.CfnAuditing",
@@ -833,6 +931,54 @@ func init() {
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.CfnCustomDnsConfigurationClusterAwsProps",
 		reflect.TypeOf((*CfnCustomDnsConfigurationClusterAwsProps)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"awscdk-resources-mongodbatlas.CfnDataLakePipeline",
+		reflect.TypeOf((*CfnDataLakePipeline)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addDeletionOverride", GoMethod: "AddDeletionOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addDependency", GoMethod: "AddDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "addDependsOn", GoMethod: "AddDependsOn"},
+			_jsii_.MemberMethod{JsiiMethod: "addMetadata", GoMethod: "AddMetadata"},
+			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "attrCreatedDate", GoGetter: "AttrCreatedDate"},
+			_jsii_.MemberProperty{JsiiProperty: "attrId", GoGetter: "AttrId"},
+			_jsii_.MemberProperty{JsiiProperty: "attrLastUpdatedDate", GoGetter: "AttrLastUpdatedDate"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberMethod{JsiiMethod: "getAtt", GoMethod: "GetAtt"},
+			_jsii_.MemberMethod{JsiiMethod: "getMetadata", GoMethod: "GetMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "logicalId", GoGetter: "LogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "obtainDependencies", GoMethod: "ObtainDependencies"},
+			_jsii_.MemberMethod{JsiiMethod: "obtainResourceDependencies", GoMethod: "ObtainResourceDependencies"},
+			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "props", GoGetter: "Props"},
+			_jsii_.MemberProperty{JsiiProperty: "ref", GoGetter: "Ref"},
+			_jsii_.MemberMethod{JsiiMethod: "removeDependency", GoMethod: "RemoveDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "renderProperties", GoMethod: "RenderProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "replaceDependency", GoMethod: "ReplaceDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "shouldSynthesize", GoMethod: "ShouldSynthesize"},
+			_jsii_.MemberProperty{JsiiProperty: "stack", GoGetter: "Stack"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedProperites", GoGetter: "UpdatedProperites"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedProperties", GoGetter: "UpdatedProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "validateProperties", GoMethod: "ValidateProperties"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CfnDataLakePipeline{}
+			_jsii_.InitJsiiProxy(&j.Type__awscdkCfnResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.CfnDataLakePipelineProps",
+		reflect.TypeOf((*CfnDataLakePipelineProps)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
 		"awscdk-resources-mongodbatlas.CfnDataLakes",
@@ -2042,6 +2188,53 @@ func init() {
 		reflect.TypeOf((*CfnProjectProps)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
+		"awscdk-resources-mongodbatlas.CfnSearchDeployment",
+		reflect.TypeOf((*CfnSearchDeployment)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addDeletionOverride", GoMethod: "AddDeletionOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addDependency", GoMethod: "AddDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "addDependsOn", GoMethod: "AddDependsOn"},
+			_jsii_.MemberMethod{JsiiMethod: "addMetadata", GoMethod: "AddMetadata"},
+			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "attrId", GoGetter: "AttrId"},
+			_jsii_.MemberProperty{JsiiProperty: "attrStateName", GoGetter: "AttrStateName"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberMethod{JsiiMethod: "getAtt", GoMethod: "GetAtt"},
+			_jsii_.MemberMethod{JsiiMethod: "getMetadata", GoMethod: "GetMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "logicalId", GoGetter: "LogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "obtainDependencies", GoMethod: "ObtainDependencies"},
+			_jsii_.MemberMethod{JsiiMethod: "obtainResourceDependencies", GoMethod: "ObtainResourceDependencies"},
+			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "props", GoGetter: "Props"},
+			_jsii_.MemberProperty{JsiiProperty: "ref", GoGetter: "Ref"},
+			_jsii_.MemberMethod{JsiiMethod: "removeDependency", GoMethod: "RemoveDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "renderProperties", GoMethod: "RenderProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "replaceDependency", GoMethod: "ReplaceDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "shouldSynthesize", GoMethod: "ShouldSynthesize"},
+			_jsii_.MemberProperty{JsiiProperty: "stack", GoGetter: "Stack"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedProperites", GoGetter: "UpdatedProperites"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedProperties", GoGetter: "UpdatedProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "validateProperties", GoMethod: "ValidateProperties"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CfnSearchDeployment{}
+			_jsii_.InitJsiiProxy(&j.Type__awscdkCfnResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.CfnSearchDeploymentProps",
+		reflect.TypeOf((*CfnSearchDeploymentProps)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
 		"awscdk-resources-mongodbatlas.CfnSearchIndex",
 		reflect.TypeOf((*CfnSearchIndex)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -2188,6 +2381,106 @@ func init() {
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.CfnServerlessPrivateEndpointProps",
 		reflect.TypeOf((*CfnServerlessPrivateEndpointProps)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"awscdk-resources-mongodbatlas.CfnStreamConnection",
+		reflect.TypeOf((*CfnStreamConnection)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addDeletionOverride", GoMethod: "AddDeletionOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addDependency", GoMethod: "AddDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "addDependsOn", GoMethod: "AddDependsOn"},
+			_jsii_.MemberMethod{JsiiMethod: "addMetadata", GoMethod: "AddMetadata"},
+			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberMethod{JsiiMethod: "getAtt", GoMethod: "GetAtt"},
+			_jsii_.MemberMethod{JsiiMethod: "getMetadata", GoMethod: "GetMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "logicalId", GoGetter: "LogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "obtainDependencies", GoMethod: "ObtainDependencies"},
+			_jsii_.MemberMethod{JsiiMethod: "obtainResourceDependencies", GoMethod: "ObtainResourceDependencies"},
+			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "props", GoGetter: "Props"},
+			_jsii_.MemberProperty{JsiiProperty: "ref", GoGetter: "Ref"},
+			_jsii_.MemberMethod{JsiiMethod: "removeDependency", GoMethod: "RemoveDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "renderProperties", GoMethod: "RenderProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "replaceDependency", GoMethod: "ReplaceDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "shouldSynthesize", GoMethod: "ShouldSynthesize"},
+			_jsii_.MemberProperty{JsiiProperty: "stack", GoGetter: "Stack"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedProperites", GoGetter: "UpdatedProperites"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedProperties", GoGetter: "UpdatedProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "validateProperties", GoMethod: "ValidateProperties"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CfnStreamConnection{}
+			_jsii_.InitJsiiProxy(&j.Type__awscdkCfnResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.CfnStreamConnectionProps",
+		reflect.TypeOf((*CfnStreamConnectionProps)(nil)).Elem(),
+	)
+	_jsii_.RegisterEnum(
+		"awscdk-resources-mongodbatlas.CfnStreamConnectionPropsType",
+		reflect.TypeOf((*CfnStreamConnectionPropsType)(nil)).Elem(),
+		map[string]interface{}{
+			"KAFKA": CfnStreamConnectionPropsType_KAFKA,
+			"CLUSTER": CfnStreamConnectionPropsType_CLUSTER,
+		},
+	)
+	_jsii_.RegisterClass(
+		"awscdk-resources-mongodbatlas.CfnStreamInstance",
+		reflect.TypeOf((*CfnStreamInstance)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addDeletionOverride", GoMethod: "AddDeletionOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addDependency", GoMethod: "AddDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "addDependsOn", GoMethod: "AddDependsOn"},
+			_jsii_.MemberMethod{JsiiMethod: "addMetadata", GoMethod: "AddMetadata"},
+			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "attrHostnames", GoGetter: "AttrHostnames"},
+			_jsii_.MemberProperty{JsiiProperty: "attrId", GoGetter: "AttrId"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
+			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberMethod{JsiiMethod: "getAtt", GoMethod: "GetAtt"},
+			_jsii_.MemberMethod{JsiiMethod: "getMetadata", GoMethod: "GetMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "logicalId", GoGetter: "LogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberMethod{JsiiMethod: "obtainDependencies", GoMethod: "ObtainDependencies"},
+			_jsii_.MemberMethod{JsiiMethod: "obtainResourceDependencies", GoMethod: "ObtainResourceDependencies"},
+			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "props", GoGetter: "Props"},
+			_jsii_.MemberProperty{JsiiProperty: "ref", GoGetter: "Ref"},
+			_jsii_.MemberMethod{JsiiMethod: "removeDependency", GoMethod: "RemoveDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "renderProperties", GoMethod: "RenderProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "replaceDependency", GoMethod: "ReplaceDependency"},
+			_jsii_.MemberMethod{JsiiMethod: "shouldSynthesize", GoMethod: "ShouldSynthesize"},
+			_jsii_.MemberProperty{JsiiProperty: "stack", GoGetter: "Stack"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedProperites", GoGetter: "UpdatedProperites"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedProperties", GoGetter: "UpdatedProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "validateProperties", GoMethod: "ValidateProperties"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CfnStreamInstance{}
+			_jsii_.InitJsiiProxy(&j.Type__awscdkCfnResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.CfnStreamInstanceProps",
+		reflect.TypeOf((*CfnStreamInstanceProps)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
 		"awscdk-resources-mongodbatlas.CfnTeams",
@@ -2590,6 +2883,18 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.DbRoleToExecute",
+		reflect.TypeOf((*DbRoleToExecute)(nil)).Elem(),
+	)
+	_jsii_.RegisterEnum(
+		"awscdk-resources-mongodbatlas.DbRoleToExecuteType",
+		reflect.TypeOf((*DbRoleToExecuteType)(nil)).Elem(),
+		map[string]interface{}{
+			"BUILT_UNDERSCORE_IN": DbRoleToExecuteType_BUILT_UNDERSCORE_IN,
+			"CUSTOM": DbRoleToExecuteType_CUSTOM,
+		},
+	)
+	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.DiskGb",
 		reflect.TypeOf((*DiskGb)(nil)).Elem(),
 	)
@@ -2886,6 +3191,10 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.PartitionFields",
+		reflect.TypeOf((*PartitionFields)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.PrivateEndpoint",
 		reflect.TypeOf((*PrivateEndpoint)(nil)).Elem(),
 	)
@@ -2900,6 +3209,10 @@ func init() {
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.ProjectApiKey",
 		reflect.TypeOf((*ProjectApiKey)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.ProjectAssignment",
+		reflect.TypeOf((*ProjectAssignment)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.ProjectProps",
@@ -2994,6 +3307,29 @@ func init() {
 		reflect.TypeOf((*ServerlessPrivateEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.Sink",
+		reflect.TypeOf((*Sink)(nil)).Elem(),
+	)
+	_jsii_.RegisterEnum(
+		"awscdk-resources-mongodbatlas.SinkType",
+		reflect.TypeOf((*SinkType)(nil)).Elem(),
+		map[string]interface{}{
+			"DLS": SinkType_DLS,
+		},
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.Source",
+		reflect.TypeOf((*Source)(nil)).Elem(),
+	)
+	_jsii_.RegisterEnum(
+		"awscdk-resources-mongodbatlas.SourceType",
+		reflect.TypeOf((*SourceType)(nil)).Elem(),
+		map[string]interface{}{
+			"ON_DEMAND_CPS": SourceType_ON_DEMAND_CPS,
+			"PERIODIC_CPS": SourceType_PERIODIC_CPS,
+		},
+	)
+	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.Specs",
 		reflect.TypeOf((*Specs)(nil)).Elem(),
 	)
@@ -3008,6 +3344,46 @@ func init() {
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.StoreDetail",
 		reflect.TypeOf((*StoreDetail)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.StreamConfig",
+		reflect.TypeOf((*StreamConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.StreamsConnection",
+		reflect.TypeOf((*StreamsConnection)(nil)).Elem(),
+	)
+	_jsii_.RegisterEnum(
+		"awscdk-resources-mongodbatlas.StreamsConnectionType",
+		reflect.TypeOf((*StreamsConnectionType)(nil)).Elem(),
+		map[string]interface{}{
+			"KAFKA": StreamsConnectionType_KAFKA,
+			"CLUSTER": StreamsConnectionType_CLUSTER,
+			"SAMPLE": StreamsConnectionType_SAMPLE,
+		},
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.StreamsDataProcessRegion",
+		reflect.TypeOf((*StreamsDataProcessRegion)(nil)).Elem(),
+	)
+	_jsii_.RegisterEnum(
+		"awscdk-resources-mongodbatlas.StreamsDataProcessRegionCloudProvider",
+		reflect.TypeOf((*StreamsDataProcessRegionCloudProvider)(nil)).Elem(),
+		map[string]interface{}{
+			"AWS": StreamsDataProcessRegionCloudProvider_AWS,
+			"GCP": StreamsDataProcessRegionCloudProvider_GCP,
+			"AZURE": StreamsDataProcessRegionCloudProvider_AZURE,
+			"TENANT": StreamsDataProcessRegionCloudProvider_TENANT,
+			"SERVERLESS": StreamsDataProcessRegionCloudProvider_SERVERLESS,
+		},
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.StreamsKafkaAuthentication",
+		reflect.TypeOf((*StreamsKafkaAuthentication)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.StreamsKafkaSecurity",
+		reflect.TypeOf((*StreamsKafkaSecurity)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.SynchronousCreationOptions",
@@ -3028,6 +3404,10 @@ func init() {
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.ThirdPartyIntegrationProps",
 		reflect.TypeOf((*ThirdPartyIntegrationProps)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.Transformations",
+		reflect.TypeOf((*Transformations)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.Validation",
