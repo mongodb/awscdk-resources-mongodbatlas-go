@@ -6,6 +6,8 @@ package awscdkresourcesmongodbatlas
 // To use this resource, the requesting API Key must have the Project Owner roles. Note that Atlas Streams functionality is currently in [Public Preview](https://www.mongodb.com/blog/post/atlas-stream-processing-now-in-public-preview)
 type CfnStreamConnectionProps struct {
 	// Human-readable label that identifies the stream connection.
+	//
+	// In the case of the Sample type, this is the name of the sample source.
 	ConnectionName *string `field:"required" json:"connectionName" yaml:"connectionName"`
 	// Human-readable label that identifies the stream instance.
 	InstanceName *string `field:"required" json:"instanceName" yaml:"instanceName"`
@@ -17,7 +19,7 @@ type CfnStreamConnectionProps struct {
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Type of the connection.
 	//
-	// Can be either Cluster or Kafka.
+	// Can be either Cluster, Kafka, or Sample.
 	Type CfnStreamConnectionPropsType `field:"required" json:"type" yaml:"type"`
 	Authentication *StreamsKafkaAuthentication `field:"optional" json:"authentication" yaml:"authentication"`
 	// Comma separated list of server addresses.

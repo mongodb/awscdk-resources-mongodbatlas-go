@@ -8,7 +8,7 @@ type DbRoleToExecuteType string
 
 const (
 	// BUILT_IN.
-	DbRoleToExecuteType_BUILT_UNDERSCORE_IN DbRoleToExecuteType = "BUILT_UNDERSCORE_IN"
+	DbRoleToExecuteType_BUILT_IN DbRoleToExecuteType = "BUILT_IN"
 	// CUSTOM.
 	DbRoleToExecuteType_CUSTOM DbRoleToExecuteType = "CUSTOM"
 )

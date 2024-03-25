@@ -2433,6 +2433,7 @@ func init() {
 		map[string]interface{}{
 			"KAFKA": CfnStreamConnectionPropsType_KAFKA,
 			"CLUSTER": CfnStreamConnectionPropsType_CLUSTER,
+			"SAMPLE": CfnStreamConnectionPropsType_SAMPLE,
 		},
 	)
 	_jsii_.RegisterClass(
@@ -2890,7 +2891,7 @@ func init() {
 		"awscdk-resources-mongodbatlas.DbRoleToExecuteType",
 		reflect.TypeOf((*DbRoleToExecuteType)(nil)).Elem(),
 		map[string]interface{}{
-			"BUILT_UNDERSCORE_IN": DbRoleToExecuteType_BUILT_UNDERSCORE_IN,
+			"BUILT_IN": DbRoleToExecuteType_BUILT_IN,
 			"CUSTOM": DbRoleToExecuteType_CUSTOM,
 		},
 	)
