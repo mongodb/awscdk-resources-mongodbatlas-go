@@ -2,8 +2,6 @@ package awscdkresourcesmongodbatlas
 
 
 // Returns, adds, edits, and removes Atlas Stream Processing Instances.
-//
-// Note that Atlas Streams functionality is currently in [Public Preview](https://www.mongodb.com/blog/post/atlas-stream-processing-now-in-public-preview)
 type CfnStreamInstanceProps struct {
 	DataProcessRegion *StreamsDataProcessRegion `field:"required" json:"dataProcessRegion" yaml:"dataProcessRegion"`
 	// Human-readable label that identifies the stream connection.

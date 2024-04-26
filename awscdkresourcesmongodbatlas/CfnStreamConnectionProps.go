@@ -3,7 +3,7 @@ package awscdkresourcesmongodbatlas
 
 // Returns, adds, edits, and removes one connection for a stream instance in the specified project.
 //
-// To use this resource, the requesting API Key must have the Project Owner roles. Note that Atlas Streams functionality is currently in [Public Preview](https://www.mongodb.com/blog/post/atlas-stream-processing-now-in-public-preview)
+// To use this resource, the requesting API Key must have the Project Owner roles.
 type CfnStreamConnectionProps struct {
 	// Human-readable label that identifies the stream connection.
 	//
