@@ -12,6 +12,8 @@ import (
 // A CloudFormation `MongoDB::Atlas::Project`.
 type CfnProject interface {
 	awscdk.CfnResource
+	// Attribute `MongoDB::Atlas::Project.ClusterCount`.
+	AttrClusterCount() *float64
 	// Attribute `MongoDB::Atlas::Project.Created`.
 	AttrCreated() *string
 	// Attribute `MongoDB::Atlas::Project.Id`.
@@ -191,6 +193,16 @@ type CfnProject interface {
 // The jsii proxy struct for CfnProject
 type jsiiProxy_CfnProject struct {
 	internal.Type__awscdkCfnResource
+}
+
+func (j *jsiiProxy_CfnProject) AttrClusterCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"attrClusterCount",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CfnProject) AttrCreated() *string {

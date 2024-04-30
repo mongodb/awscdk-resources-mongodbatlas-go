@@ -7,8 +7,6 @@ type CfnProjectProps struct {
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Unique identifier of the organization within which to create the project.
 	OrgId *string `field:"required" json:"orgId" yaml:"orgId"`
-	// The number of Atlas clusters deployed in the project.
-	ClusterCount *float64 `field:"optional" json:"clusterCount" yaml:"clusterCount"`
 	// Profile used to provide credentials information, (a secret with the cfn/atlas/profile/{Profile}, is required), if not provided default is used.
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
 	// API keys that you assigned to the specified project.
@@ -18,6 +16,7 @@ type CfnProjectProps struct {
 	ProjectTeams *[]*ProjectTeam `field:"optional" json:"projectTeams" yaml:"projectTeams"`
 	// Region usage restrictions that designate the project's AWS region.Enum: "GOV_REGIONS_ONLY" "COMMERCIAL_FEDRAMP_REGIONS_ONLY" "NONE".
 	RegionUsageRestrictions *string `field:"optional" json:"regionUsageRestrictions" yaml:"regionUsageRestrictions"`
+	Tags interface{} `field:"optional" json:"tags" yaml:"tags"`
 	// Flag that indicates whether to create the project with default alert settings.
 	WithDefaultAlertsSettings *bool `field:"optional" json:"withDefaultAlertsSettings" yaml:"withDefaultAlertsSettings"`
 }
