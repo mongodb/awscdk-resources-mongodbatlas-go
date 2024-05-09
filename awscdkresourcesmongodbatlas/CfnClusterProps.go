@@ -18,6 +18,10 @@ type CfnClusterProps struct {
 	BiConnector *CfnClusterPropsBiConnector `field:"optional" json:"biConnector" yaml:"biConnector"`
 	// Configuration of nodes that comprise the cluster.
 	ClusterType *string `field:"optional" json:"clusterType" yaml:"clusterType"`
+	// Set of connection strings that your applications use to connect to this cluster.
+	//
+	// Use the parameters in this object to connect your applications to this cluster. See the MongoDB [Connection String URI Format](https://docs.mongodb.com/manual/reference/connection-string/) reference for further details.
+	ConnectionStrings *ConnectionStrings `field:"optional" json:"connectionStrings" yaml:"connectionStrings"`
 	// Storage capacity that the host's root volume possesses expressed in gigabytes.
 	//
 	// Increase this number to add capacity. MongoDB Cloud requires this parameter if you set replicationSpecs. If you specify a disk size below the minimum (10 GB), this parameter defaults to the minimum disk size value. Storage charge calculations depend on whether you choose the default value or a custom value. The maximum value for disk storage cannot exceed 50 times the maximum RAM for the selected cluster. If you require more storage space, consider upgrading your cluster to a higher tier.
