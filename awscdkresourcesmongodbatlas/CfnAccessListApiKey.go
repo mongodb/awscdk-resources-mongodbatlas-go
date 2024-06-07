@@ -12,6 +12,8 @@ import (
 // A CloudFormation `MongoDB::Atlas::AccessListAPIKey`.
 type CfnAccessListApiKey interface {
 	awscdk.CfnResource
+	// Attribute `MongoDB::Atlas::AccessListAPIKey.Entry`.
+	AttrEntry() *string
 	// Options for this resource, such as condition, update policy etc.
 	CfnOptions() awscdk.ICfnResourceOptions
 	CfnProperties() *map[string]interface{}
@@ -185,6 +187,16 @@ type CfnAccessListApiKey interface {
 // The jsii proxy struct for CfnAccessListApiKey
 type jsiiProxy_CfnAccessListApiKey struct {
 	internal.Type__awscdkCfnResource
+}
+
+func (j *jsiiProxy_CfnAccessListApiKey) AttrEntry() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attrEntry",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CfnAccessListApiKey) CfnOptions() awscdk.ICfnResourceOptions {
