@@ -30,6 +30,10 @@ type CfnClusterProps struct {
 	//
 	// To enable customer key management for encryption at rest, the cluster replicationSpecs[n].regionConfigs[m].{type}Specs.instanceSize setting must be M10 or higher and "backupEnabled" : false or omitted entirely.
 	EncryptionAtRestProvider CfnClusterPropsEncryptionAtRestProvider `field:"optional" json:"encryptionAtRestProvider" yaml:"encryptionAtRestProvider"`
+	// (Optional) Flag that indicates if cluster uses Atlas-Managed Sharding (false, default) or Self-Managed Sharding (true).
+	//
+	// It can only be enabled for Global Clusters (`GEOSHARDED`). It cannot be changed once the cluster is created. Use this mode if you're an advanced user and the default configuration is too restrictive for your workload. If you select this option, you must manually configure the sharding strategy, more info [here](https://www.mongodb.com/docs/atlas/tutorial/create-global-cluster/#select-your-sharding-configuration).
+	GlobalClusterSelfManagedSharding *bool `field:"optional" json:"globalClusterSelfManagedSharding" yaml:"globalClusterSelfManagedSharding"`
 	// Collection of key-value pairs between 1 to 255 characters in length that tag and categorize the cluster.
 	//
 	// The MongoDB Cloud console doesn't display your labels.

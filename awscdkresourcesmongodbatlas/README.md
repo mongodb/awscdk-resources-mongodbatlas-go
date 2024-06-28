@@ -74,7 +74,7 @@ Support for the MongoDB Atlas Resource Provider for CloudFormation is provided u
 
 ## MongoDB Atlas API Keys Credential Management
 
-Atlas API keys Configuration are required for both CloudFormation and CDK resources, and this Atlas API key pair are provided as input by the use of a Profile
+Atlas API keys Configuration are required for both CloudFormation and CDK resources, and this Atlas API key pair are provided as input by the use of a Profile.
 
 AWS CloudFormation limits Third Parties from using non-AWS API Keys as either hardcoded secrets in CloudFormation templates or via CDK, hence we now require all the users store MongoDB Atlas API Keys via [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/).
 
@@ -103,17 +103,17 @@ Here are some examples of how to use this template:
 #### example 1:
 
 ```
-  ProfileName: default
-  SecretName: cfn/atlas/profile/default
-  SecretValue: {"PublicKey": "YourPublicKey", "PrivateKey": "YourPrivateKey"}
+ProfileName: default
+SecretName: cfn/atlas/profile/default
+SecretValue: {"PublicKey": "YourPublicKey", "PrivateKey": "YourPrivateKey"}
 ```
 
 #### example 2:
 
 ```
-  ProfileName: testProfile
-  SecretName: cfn/atlas/profile/testProfile
-  SecretValue: {"PublicKey": "YourPublicKey", "PrivateKey": "YourPrivateKey"}
+ProfileName: testProfile
+SecretName: cfn/atlas/profile/testProfile
+SecretValue: {"PublicKey": "YourPublicKey", "PrivateKey": "YourPrivateKey"}
 ```
 
 ## Contributing

@@ -2,6 +2,8 @@ package awscdkresourcesmongodbatlas
 
 
 // Returns, adds, and removes Global Cluster managed namespaces and custom zone mappings.
+//
+// This resource can only be used with Atlas-managed clusters, see doc for `GlobalClusterSelfManagedSharding` attribute in `Mongodb::Atlas::Cluster` resource for more info.
 type CfnGlobalClusterConfigProps struct {
 	// The name of the Atlas cluster that contains the snapshots you want to retrieve.
 	ClusterName *string `field:"required" json:"clusterName" yaml:"clusterName"`
