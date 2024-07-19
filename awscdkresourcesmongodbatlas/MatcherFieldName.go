@@ -21,5 +21,11 @@ const (
 	MatcherFieldName_SHARD_NAME MatcherFieldName = "SHARD_NAME"
 	// TYPE_NAME.
 	MatcherFieldName_TYPE_NAME MatcherFieldName = "TYPE_NAME"
+	// APPLICATION_ID.
+	MatcherFieldName_APPLICATION_ID MatcherFieldName = "APPLICATION_ID"
+	// INSTANCE_NAME.
+	MatcherFieldName_INSTANCE_NAME MatcherFieldName = "INSTANCE_NAME"
+	// PROCESSOR_NAME.
+	MatcherFieldName_PROCESSOR_NAME MatcherFieldName = "PROCESSOR_NAME"
 )
 

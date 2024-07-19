@@ -2992,6 +2992,9 @@ func init() {
 			"REPLICA_SET_NAME": MatcherFieldName_REPLICA_SET_NAME,
 			"SHARD_NAME": MatcherFieldName_SHARD_NAME,
 			"TYPE_NAME": MatcherFieldName_TYPE_NAME,
+			"APPLICATION_ID": MatcherFieldName_APPLICATION_ID,
+			"INSTANCE_NAME": MatcherFieldName_INSTANCE_NAME,
+			"PROCESSOR_NAME": MatcherFieldName_PROCESSOR_NAME,
 		},
 	)
 	_jsii_.RegisterEnum(
