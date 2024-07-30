@@ -2,7 +2,7 @@ package awscdkresourcesmongodbatlas
 
 
 // Specifies AWS KMS configuration details and whether Encryption at Rest is enabled for an Atlas project.
-type AwsKmsConfiguration struct {
+type AwsKmsConfig struct {
 	// The AWS customer master key used to encrypt and decrypt the MongoDB master keys.
 	CustomerMasterKeyId *string `field:"optional" json:"customerMasterKeyId" yaml:"customerMasterKeyId"`
 	// Specifies whether Encryption at Rest is enabled for an Atlas project.

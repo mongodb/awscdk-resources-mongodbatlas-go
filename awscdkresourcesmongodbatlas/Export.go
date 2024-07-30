@@ -6,7 +6,7 @@ type Export struct {
 	ExportBucketId *string `field:"optional" json:"exportBucketId" yaml:"exportBucketId"`
 	// Frequency associated with the export policy.
 	//
-	// Value can be daily, weekly, or monthly.
+	// Value can be daily, weekly, monthly or yearly.
 	FrequencyType *string `field:"optional" json:"frequencyType" yaml:"frequencyType"`
 }
 

@@ -12,14 +12,8 @@ import (
 // A CloudFormation `MongoDB::Atlas::FederatedDatabaseInstance`.
 type CfnFederatedDatabaseInstance interface {
 	awscdk.CfnResource
-	// Attribute `MongoDB::Atlas::FederatedDatabaseInstance.CloudProviderConfig.ExternalId`.
-	AttrExternalId() *string
 	// Attribute `MongoDB::Atlas::FederatedDatabaseInstance.HostNames`.
 	AttrHostNames() *[]*string
-	// Attribute `MongoDB::Atlas::FederatedDatabaseInstance.CloudProviderConfig.IamAssumedRoleARN`.
-	AttrIamAssumedRoleARNN() *string
-	// Attribute `MongoDB::Atlas::FederatedDatabaseInstance.CloudProviderConfig.IamUserARN`.
-	AttrIamUserARN() *string
 	// Attribute `MongoDB::Atlas::FederatedDatabaseInstance.State`.
 	AttrState() *string
 	// Options for this resource, such as condition, update policy etc.
@@ -197,41 +191,11 @@ type jsiiProxy_CfnFederatedDatabaseInstance struct {
 	internal.Type__awscdkCfnResource
 }
 
-func (j *jsiiProxy_CfnFederatedDatabaseInstance) AttrExternalId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attrExternalId",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CfnFederatedDatabaseInstance) AttrHostNames() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"attrHostNames",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CfnFederatedDatabaseInstance) AttrIamAssumedRoleARNN() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attrIamAssumedRoleARNN",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CfnFederatedDatabaseInstance) AttrIamUserARN() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attrIamUserARN",
 		&returns,
 	)
 	return returns

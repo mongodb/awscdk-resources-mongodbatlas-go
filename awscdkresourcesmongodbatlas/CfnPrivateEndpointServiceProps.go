@@ -13,7 +13,7 @@ type CfnPrivateEndpointServiceProps struct {
 	Region *string `field:"required" json:"region" yaml:"region"`
 	// The profile is defined in AWS Secret manager.
 	//
-	// See [Secret Manager Profile setup (../../../examples/profile-secret.yaml)
+	// See [Secret Manager Profile setup](../../../examples/profile-secret.yaml)
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
 }
 

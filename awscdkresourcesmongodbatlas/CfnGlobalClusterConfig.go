@@ -12,6 +12,8 @@ import (
 // A CloudFormation `MongoDB::Atlas::GlobalClusterConfig`.
 type CfnGlobalClusterConfig interface {
 	awscdk.CfnResource
+	// Attribute `MongoDB::Atlas::GlobalClusterConfig.RemoveAllZoneMapping`.
+	AttrRemoveAllZoneMapping() awscdk.IResolvable
 	// Options for this resource, such as condition, update policy etc.
 	CfnOptions() awscdk.ICfnResourceOptions
 	CfnProperties() *map[string]interface{}
@@ -185,6 +187,16 @@ type CfnGlobalClusterConfig interface {
 // The jsii proxy struct for CfnGlobalClusterConfig
 type jsiiProxy_CfnGlobalClusterConfig struct {
 	internal.Type__awscdkCfnResource
+}
+
+func (j *jsiiProxy_CfnGlobalClusterConfig) AttrRemoveAllZoneMapping() awscdk.IResolvable {
+	var returns awscdk.IResolvable
+	_jsii_.Get(
+		j,
+		"attrRemoveAllZoneMapping",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CfnGlobalClusterConfig) CfnOptions() awscdk.ICfnResourceOptions {

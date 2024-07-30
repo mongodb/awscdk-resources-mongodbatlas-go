@@ -23,7 +23,7 @@ type CfnPrivateEndpointAwsProps struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The profile is defined in AWS Secret manager.
 	//
-	// See [Secret Manager Profile setup (../../../examples/profile-secret.yaml)
+	// See [Secret Manager Profile setup](../../../examples/profile-secret.yaml)
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
 }
 

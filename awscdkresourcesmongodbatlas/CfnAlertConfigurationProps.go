@@ -5,10 +5,6 @@ package awscdkresourcesmongodbatlas
 //
 // This collection remains under revision and may change. Refer to the legacy documentation for this collection in the following link.
 type CfnAlertConfigurationProps struct {
-	// Date and time when MongoDB Cloud created the alert configuration.
-	//
-	// This parameter expresses its value in the ISO 8601 timestamp format in UTC.
-	Created *string `field:"optional" json:"created" yaml:"created"`
 	// Event type that triggers an alert.
 	EventTypeName *string `field:"optional" json:"eventTypeName" yaml:"eventTypeName"`
 	// List of rules that determine whether MongoDB Cloud checks an object for the alert configuration.

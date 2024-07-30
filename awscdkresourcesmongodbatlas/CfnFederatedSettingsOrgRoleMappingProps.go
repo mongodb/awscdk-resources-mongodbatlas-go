@@ -9,11 +9,11 @@ type CfnFederatedSettingsOrgRoleMappingProps struct {
 	FederationSettingsId *string `field:"required" json:"federationSettingsId" yaml:"federationSettingsId"`
 	// Unique 24-hexadecimal digit string that identifies the organization that contains your projects.
 	OrgId *string `field:"required" json:"orgId" yaml:"orgId"`
-	// Atlas roles and the unique identifiers of the groups and organizations associated with each role.
-	RoleAssignments *[]*RoleAssignment `field:"required" json:"roleAssignments" yaml:"roleAssignments"`
 	// The profile is defined in AWS Secret manager.
 	//
 	// See [Secret Manager Profile setup](../../../examples/profile-secret.yaml).
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
+	// Atlas roles and the unique identifiers of the groups and organizations associated with each role.
+	RoleAssignments *[]*RoleAssignment `field:"optional" json:"roleAssignments" yaml:"roleAssignments"`
 }
 

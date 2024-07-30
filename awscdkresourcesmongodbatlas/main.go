@@ -96,6 +96,10 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.ApiAtlasFtsAnalyzersTokenizer",
+		reflect.TypeOf((*ApiAtlasFtsAnalyzersTokenizer)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.ApiAtlasFtsAnalyzersViewManual",
 		reflect.TypeOf((*ApiAtlasFtsAnalyzersViewManual)(nil)).Elem(),
 	)
@@ -286,8 +290,8 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.AwsKmsConfiguration",
-		reflect.TypeOf((*AwsKmsConfiguration)(nil)).Elem(),
+		"awscdk-resources-mongodbatlas.AwsKmsConfig",
+		reflect.TypeOf((*AwsKmsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.AwsPrivateEndpointConfig",
@@ -351,6 +355,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "attrCreated", GoGetter: "AttrCreated"},
 			_jsii_.MemberProperty{JsiiProperty: "attrEnabled", GoGetter: "AttrEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "attrId", GoGetter: "AttrId"},
 			_jsii_.MemberProperty{JsiiProperty: "attrUpdated", GoGetter: "AttrUpdated"},
@@ -400,7 +405,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "attrAPIUserId", GoGetter: "AttrAPIUserId"},
-			_jsii_.MemberProperty{JsiiProperty: "attrAwsSecretArn", GoGetter: "AttrAwsSecretArn"},
 			_jsii_.MemberProperty{JsiiProperty: "attrPrivateKey", GoGetter: "AttrPrivateKey"},
 			_jsii_.MemberProperty{JsiiProperty: "attrPublicKey", GoGetter: "AttrPublicKey"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
@@ -496,8 +500,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "attrCancelled", GoGetter: "AttrCancelled"},
 			_jsii_.MemberProperty{JsiiProperty: "attrDeliveryUrl", GoGetter: "AttrDeliveryUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "attrExpired", GoGetter: "AttrExpired"},
 			_jsii_.MemberProperty{JsiiProperty: "attrExpiresAt", GoGetter: "AttrExpiresAt"},
+			_jsii_.MemberProperty{JsiiProperty: "attrFailed", GoGetter: "AttrFailed"},
 			_jsii_.MemberProperty{JsiiProperty: "attrFinishedAt", GoGetter: "AttrFinishedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "attrId", GoGetter: "AttrId"},
 			_jsii_.MemberProperty{JsiiProperty: "attrTimestamp", GoGetter: "AttrTimestamp"},
@@ -550,6 +557,10 @@ func init() {
 			"SERVERLESS": CfnCloudBackUpRestoreJobsPropsInstanceType_SERVERLESS,
 			"CLUSTER": CfnCloudBackUpRestoreJobsPropsInstanceType_CLUSTER,
 		},
+	)
+	_jsii_.RegisterStruct(
+		"awscdk-resources-mongodbatlas.CfnCloudBackUpRestoreJobsPropsLinks",
+		reflect.TypeOf((*CfnCloudBackUpRestoreJobsPropsLinks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
 		"awscdk-resources-mongodbatlas.CfnCloudBackupSchedule",
@@ -1159,10 +1170,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "attrExternalId", GoGetter: "AttrExternalId"},
 			_jsii_.MemberProperty{JsiiProperty: "attrHostNames", GoGetter: "AttrHostNames"},
-			_jsii_.MemberProperty{JsiiProperty: "attrIamAssumedRoleARNN", GoGetter: "AttrIamAssumedRoleARNN"},
-			_jsii_.MemberProperty{JsiiProperty: "attrIamUserARN", GoGetter: "AttrIamUserARN"},
 			_jsii_.MemberProperty{JsiiProperty: "attrState", GoGetter: "AttrState"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
@@ -1314,6 +1322,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "attrRemoveAllZoneMapping", GoGetter: "AttrRemoveAllZoneMapping"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},
@@ -2151,6 +2160,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "attrTotalCount", GoGetter: "AttrTotalCount"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},
@@ -2675,6 +2685,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "attrMonthsUntilExpiration", GoGetter: "AttrMonthsUntilExpiration"},
+			_jsii_.MemberProperty{JsiiProperty: "attrTotalCount", GoGetter: "AttrTotalCount"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},
@@ -3183,18 +3195,6 @@ func init() {
 		"awscdk-resources-mongodbatlas.PartitionFieldView",
 		reflect.TypeOf((*PartitionFieldView)(nil)).Elem(),
 	)
-	_jsii_.RegisterEnum(
-		"awscdk-resources-mongodbatlas.PartitionFieldViewFieldType",
-		reflect.TypeOf((*PartitionFieldViewFieldType)(nil)).Elem(),
-		map[string]interface{}{
-			"DATE": PartitionFieldViewFieldType_DATE,
-			"INT": PartitionFieldViewFieldType_INT,
-			"LONG": PartitionFieldViewFieldType_LONG,
-			"OBJECT_ID": PartitionFieldViewFieldType_OBJECT_ID,
-			"STRING": PartitionFieldViewFieldType_STRING,
-			"UUID": PartitionFieldViewFieldType_UUID,
-		},
-	)
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.PartitionFields",
 		reflect.TypeOf((*PartitionFields)(nil)).Elem(),
@@ -3306,10 +3306,6 @@ func init() {
 		map[string]interface{}{
 			"SERVERLESS": ServerlessInstanceProviderSettingsProviderName_SERVERLESS,
 		},
-	)
-	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.ServerlessPrivateEndpoint",
-		reflect.TypeOf((*ServerlessPrivateEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.Sink",

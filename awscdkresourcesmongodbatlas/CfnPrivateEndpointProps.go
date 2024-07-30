@@ -1,7 +1,7 @@
 package awscdkresourcesmongodbatlas
 
 
-// The Private Endpoint creation flow consists of the creation of three related resources in the next order: 1.
+// DEPRECATED- USE MongoDB::Atlas::PrivateEndpointService and MongoDB::Atlas::PrivateEndpointAWS instead, The Private Endpoint creation flow consists of the creation of three related resources in the next order: 1.
 //
 // Atlas Private Endpoint Service 2. Aws VPC private Endpoint 3. Atlas Private Endpoint
 type CfnPrivateEndpointProps struct {
@@ -21,7 +21,7 @@ type CfnPrivateEndpointProps struct {
 	PrivateEndpoints *[]*PrivateEndpoint `field:"optional" json:"privateEndpoints" yaml:"privateEndpoints"`
 	// The profile is defined in AWS Secret manager.
 	//
-	// See [Secret Manager Profile setup (../../../examples/profile-secret.yaml)
+	// See [Secret Manager Profile setup](../../../examples/profile-secret.yaml)
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
 	// Status of the Atlas PrivateEndpoint service connection.
 	Status *string `field:"optional" json:"status" yaml:"status"`

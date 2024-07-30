@@ -13,14 +13,10 @@ type CfnCloudBackUpRestoreJobsProps struct {
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Unique identifier of the source snapshot ID of the restore job.
 	SnapshotId *string `field:"required" json:"snapshotId" yaml:"snapshotId"`
-	// Indicates whether the restore job was canceled.
-	Cancelled *bool `field:"optional" json:"cancelled" yaml:"cancelled"`
 	// If set to true, the CloudFormation resource will wait until the job is completed, WARNING: if the snapshot has a big load of data, the cloud formation resource might take a long time to finish leading to high costs.
 	EnableSynchronousCreation *bool `field:"optional" json:"enableSynchronousCreation" yaml:"enableSynchronousCreation"`
-	// Indicates whether the restore job expired.
-	Expired *bool `field:"optional" json:"expired" yaml:"expired"`
-	// Indicates whether the restore job failed.
-	Failed *bool `field:"optional" json:"failed" yaml:"failed"`
+	// One or more links to sub-resources and/or related resources.
+	Links *[]*CfnCloudBackUpRestoreJobsPropsLinks `field:"optional" json:"links" yaml:"links"`
 	// Oplog operation number from which to you want to restore this snapshot.
 	//
 	// This is the second part of an Oplog timestamp.

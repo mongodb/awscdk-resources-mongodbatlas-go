@@ -12,10 +12,16 @@ import (
 // A CloudFormation `MongoDB::Atlas::CloudBackUpRestoreJobs`.
 type CfnCloudBackUpRestoreJobs interface {
 	awscdk.CfnResource
+	// Attribute `MongoDB::Atlas::CloudBackUpRestoreJobs.Cancelled`.
+	AttrCancelled() awscdk.IResolvable
 	// Attribute `MongoDB::Atlas::CloudBackUpRestoreJobs.DeliveryUrl`.
 	AttrDeliveryUrl() *[]*string
+	// Attribute `MongoDB::Atlas::CloudBackUpRestoreJobs.Expired`.
+	AttrExpired() awscdk.IResolvable
 	// Attribute `MongoDB::Atlas::CloudBackUpRestoreJobs.ExpiresAt`.
 	AttrExpiresAt() *string
+	// Attribute `MongoDB::Atlas::CloudBackUpRestoreJobs.Failed`.
+	AttrFailed() awscdk.IResolvable
 	// Attribute `MongoDB::Atlas::CloudBackUpRestoreJobs.FinishedAt`.
 	AttrFinishedAt() *string
 	// Attribute `MongoDB::Atlas::CloudBackUpRestoreJobs.Id`.
@@ -197,6 +203,16 @@ type jsiiProxy_CfnCloudBackUpRestoreJobs struct {
 	internal.Type__awscdkCfnResource
 }
 
+func (j *jsiiProxy_CfnCloudBackUpRestoreJobs) AttrCancelled() awscdk.IResolvable {
+	var returns awscdk.IResolvable
+	_jsii_.Get(
+		j,
+		"attrCancelled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CfnCloudBackUpRestoreJobs) AttrDeliveryUrl() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -207,11 +223,31 @@ func (j *jsiiProxy_CfnCloudBackUpRestoreJobs) AttrDeliveryUrl() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_CfnCloudBackUpRestoreJobs) AttrExpired() awscdk.IResolvable {
+	var returns awscdk.IResolvable
+	_jsii_.Get(
+		j,
+		"attrExpired",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CfnCloudBackUpRestoreJobs) AttrExpiresAt() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"attrExpiresAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnCloudBackUpRestoreJobs) AttrFailed() awscdk.IResolvable {
+	var returns awscdk.IResolvable
+	_jsii_.Get(
+		j,
+		"attrFailed",
 		&returns,
 	)
 	return returns

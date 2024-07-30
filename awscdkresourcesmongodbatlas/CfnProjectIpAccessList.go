@@ -12,6 +12,8 @@ import (
 // A CloudFormation `MongoDB::Atlas::ProjectIpAccessList`.
 type CfnProjectIpAccessList interface {
 	awscdk.CfnResource
+	// Attribute `MongoDB::Atlas::ProjectIpAccessList.TotalCount`.
+	AttrTotalCount() *float64
 	// Options for this resource, such as condition, update policy etc.
 	CfnOptions() awscdk.ICfnResourceOptions
 	CfnProperties() *map[string]interface{}
@@ -185,6 +187,16 @@ type CfnProjectIpAccessList interface {
 // The jsii proxy struct for CfnProjectIpAccessList
 type jsiiProxy_CfnProjectIpAccessList struct {
 	internal.Type__awscdkCfnResource
+}
+
+func (j *jsiiProxy_CfnProjectIpAccessList) AttrTotalCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"attrTotalCount",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CfnProjectIpAccessList) CfnOptions() awscdk.ICfnResourceOptions {

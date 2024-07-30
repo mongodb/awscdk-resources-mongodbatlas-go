@@ -1,7 +1,7 @@
 package awscdkresourcesmongodbatlas
 
 
-// View and manage your application's [triggers](https://www.mongodb.com/docs/atlas/app-services/triggers/overview/).
+// View and manage your application's triggers: https://www.mongodb.com/docs/atlas/app-services/triggers/.
 type CfnTriggerProps struct {
 	// App Services Application ID.
 	AppId *string `field:"required" json:"appId" yaml:"appId"`

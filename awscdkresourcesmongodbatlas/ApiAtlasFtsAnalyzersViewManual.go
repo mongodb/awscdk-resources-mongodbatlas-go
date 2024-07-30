@@ -20,6 +20,6 @@ type ApiAtlasFtsAnalyzersViewManual struct {
 	// Tokenizer that you want to use to create tokens.
 	//
 	// Tokens determine how Atlas Search splits up text into discrete chunks for indexing.
-	Tokenizer interface{} `field:"optional" json:"tokenizer" yaml:"tokenizer"`
+	Tokenizer *ApiAtlasFtsAnalyzersTokenizer `field:"optional" json:"tokenizer" yaml:"tokenizer"`
 }
 

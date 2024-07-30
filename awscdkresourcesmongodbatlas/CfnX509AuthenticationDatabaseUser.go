@@ -12,6 +12,10 @@ import (
 // A CloudFormation `MongoDB::Atlas::X509AuthenticationDatabaseUser`.
 type CfnX509AuthenticationDatabaseUser interface {
 	awscdk.CfnResource
+	// Attribute `MongoDB::Atlas::X509AuthenticationDatabaseUser.MonthsUntilExpiration`.
+	AttrMonthsUntilExpiration() *float64
+	// Attribute `MongoDB::Atlas::X509AuthenticationDatabaseUser.TotalCount`.
+	AttrTotalCount() *float64
 	// Options for this resource, such as condition, update policy etc.
 	CfnOptions() awscdk.ICfnResourceOptions
 	CfnProperties() *map[string]interface{}
@@ -185,6 +189,26 @@ type CfnX509AuthenticationDatabaseUser interface {
 // The jsii proxy struct for CfnX509AuthenticationDatabaseUser
 type jsiiProxy_CfnX509AuthenticationDatabaseUser struct {
 	internal.Type__awscdkCfnResource
+}
+
+func (j *jsiiProxy_CfnX509AuthenticationDatabaseUser) AttrMonthsUntilExpiration() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"attrMonthsUntilExpiration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnX509AuthenticationDatabaseUser) AttrTotalCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"attrTotalCount",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CfnX509AuthenticationDatabaseUser) CfnOptions() awscdk.ICfnResourceOptions {

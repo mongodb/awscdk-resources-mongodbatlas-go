@@ -14,8 +14,6 @@ type CfnApiKey interface {
 	awscdk.CfnResource
 	// Attribute `MongoDB::Atlas::APIKey.APIUserId`.
 	AttrAPIUserId() *string
-	// Attribute `MongoDB::Atlas::APIKey.AwsSecretArn`.
-	AttrAwsSecretArn() *string
 	// Attribute `MongoDB::Atlas::APIKey.PrivateKey`.
 	AttrPrivateKey() *string
 	// Attribute `MongoDB::Atlas::APIKey.PublicKey`.
@@ -200,16 +198,6 @@ func (j *jsiiProxy_CfnApiKey) AttrAPIUserId() *string {
 	_jsii_.Get(
 		j,
 		"attrAPIUserId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CfnApiKey) AttrAwsSecretArn() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"attrAwsSecretArn",
 		&returns,
 	)
 	return returns

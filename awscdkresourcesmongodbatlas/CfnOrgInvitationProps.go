@@ -3,7 +3,9 @@ package awscdkresourcesmongodbatlas
 
 // Returns, adds, and edits organizational units in MongoDB Cloud.
 type CfnOrgInvitationProps struct {
-	// Profile used to provide credentials information, (a secret with the cfn/atlas/profile/{Profile}, is required), if not provided default is used.
+	// The profile is defined in AWS Secret manager.
+	//
+	// See [Secret Manager Profile setup](../../../examples/profile-secret.yaml).
 	Profile *string `field:"required" json:"profile" yaml:"profile"`
 	// Flag that indicates whether the response returns the total number of items (**totalCount**) in the response.
 	IncludeCount *bool `field:"optional" json:"includeCount" yaml:"includeCount"`

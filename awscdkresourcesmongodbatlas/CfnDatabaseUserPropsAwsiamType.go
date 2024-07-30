@@ -2,6 +2,8 @@ package awscdkresourcesmongodbatlas
 
 
 // Human-readable label that indicates whether the new database user authenticates with the Amazon Web Services (AWS) Identity and Access Management (IAM) credentials associated with the user or the user's role.
+//
+// Default value is `NONE`.
 type CfnDatabaseUserPropsAwsiamType string
 
 const (
