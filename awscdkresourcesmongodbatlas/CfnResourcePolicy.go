@@ -9,15 +9,17 @@ import (
 	"github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v3/internal"
 )
 
-// A CloudFormation `MongoDB::Atlas::Project`.
-type CfnProject interface {
+// A CloudFormation `MongoDB::Atlas::ResourcePolicy`.
+type CfnResourcePolicy interface {
 	awscdk.CfnResource
-	// Attribute `MongoDB::Atlas::Project.ClusterCount`.
-	AttrClusterCount() *float64
-	// Attribute `MongoDB::Atlas::Project.Created`.
-	AttrCreated() *string
-	// Attribute `MongoDB::Atlas::Project.Id`.
+	// Attribute `MongoDB::Atlas::ResourcePolicy.CreatedDate`.
+	AttrCreatedDate() *string
+	// Attribute `MongoDB::Atlas::ResourcePolicy.Id`.
 	AttrId() *string
+	// Attribute `MongoDB::Atlas::ResourcePolicy.LastUpdatedDate`.
+	AttrLastUpdatedDate() *string
+	// Attribute `MongoDB::Atlas::ResourcePolicy.Version`.
+	AttrVersion() *string
 	// Options for this resource, such as condition, update policy etc.
 	CfnOptions() awscdk.ICfnResourceOptions
 	CfnProperties() *map[string]interface{}
@@ -40,7 +42,7 @@ type CfnProject interface {
 	// The tree node.
 	Node() constructs.Node
 	// Resource props.
-	Props() *CfnProjectProps
+	Props() *CfnResourcePolicyProps
 	// Return a string that will be resolved to a CloudFormation `{ Ref }` for this element.
 	//
 	// If, by any chance, the intrinsic reference of a resource is not a string, you could
@@ -188,32 +190,22 @@ type CfnProject interface {
 	ValidateProperties(_properties interface{})
 }
 
-// The jsii proxy struct for CfnProject
-type jsiiProxy_CfnProject struct {
+// The jsii proxy struct for CfnResourcePolicy
+type jsiiProxy_CfnResourcePolicy struct {
 	internal.Type__awscdkCfnResource
 }
 
-func (j *jsiiProxy_CfnProject) AttrClusterCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"attrClusterCount",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CfnProject) AttrCreated() *string {
+func (j *jsiiProxy_CfnResourcePolicy) AttrCreatedDate() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"attrCreated",
+		"attrCreatedDate",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) AttrId() *string {
+func (j *jsiiProxy_CfnResourcePolicy) AttrId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -223,7 +215,27 @@ func (j *jsiiProxy_CfnProject) AttrId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) CfnOptions() awscdk.ICfnResourceOptions {
+func (j *jsiiProxy_CfnResourcePolicy) AttrLastUpdatedDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attrLastUpdatedDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnResourcePolicy) AttrVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attrVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnResourcePolicy) CfnOptions() awscdk.ICfnResourceOptions {
 	var returns awscdk.ICfnResourceOptions
 	_jsii_.Get(
 		j,
@@ -233,7 +245,7 @@ func (j *jsiiProxy_CfnProject) CfnOptions() awscdk.ICfnResourceOptions {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) CfnProperties() *map[string]interface{} {
+func (j *jsiiProxy_CfnResourcePolicy) CfnProperties() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -243,7 +255,7 @@ func (j *jsiiProxy_CfnProject) CfnProperties() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) CfnResourceType() *string {
+func (j *jsiiProxy_CfnResourcePolicy) CfnResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -253,7 +265,7 @@ func (j *jsiiProxy_CfnProject) CfnResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) CreationStack() *[]*string {
+func (j *jsiiProxy_CfnResourcePolicy) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -263,7 +275,7 @@ func (j *jsiiProxy_CfnProject) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) LogicalId() *string {
+func (j *jsiiProxy_CfnResourcePolicy) LogicalId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -273,7 +285,7 @@ func (j *jsiiProxy_CfnProject) LogicalId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) Node() constructs.Node {
+func (j *jsiiProxy_CfnResourcePolicy) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -283,8 +295,8 @@ func (j *jsiiProxy_CfnProject) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) Props() *CfnProjectProps {
-	var returns *CfnProjectProps
+func (j *jsiiProxy_CfnResourcePolicy) Props() *CfnResourcePolicyProps {
+	var returns *CfnResourcePolicyProps
 	_jsii_.Get(
 		j,
 		"props",
@@ -293,7 +305,7 @@ func (j *jsiiProxy_CfnProject) Props() *CfnProjectProps {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) Ref() *string {
+func (j *jsiiProxy_CfnResourcePolicy) Ref() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -303,7 +315,7 @@ func (j *jsiiProxy_CfnProject) Ref() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) Stack() awscdk.Stack {
+func (j *jsiiProxy_CfnResourcePolicy) Stack() awscdk.Stack {
 	var returns awscdk.Stack
 	_jsii_.Get(
 		j,
@@ -313,7 +325,7 @@ func (j *jsiiProxy_CfnProject) Stack() awscdk.Stack {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) UpdatedProperites() *map[string]interface{} {
+func (j *jsiiProxy_CfnResourcePolicy) UpdatedProperites() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -323,7 +335,7 @@ func (j *jsiiProxy_CfnProject) UpdatedProperites() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CfnProject) UpdatedProperties() *map[string]interface{} {
+func (j *jsiiProxy_CfnResourcePolicy) UpdatedProperties() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -334,17 +346,17 @@ func (j *jsiiProxy_CfnProject) UpdatedProperties() *map[string]interface{} {
 }
 
 
-// Create a new `MongoDB::Atlas::Project`.
-func NewCfnProject(scope constructs.Construct, id *string, props *CfnProjectProps) CfnProject {
+// Create a new `MongoDB::Atlas::ResourcePolicy`.
+func NewCfnResourcePolicy(scope constructs.Construct, id *string, props *CfnResourcePolicyProps) CfnResourcePolicy {
 	_init_.Initialize()
 
-	if err := validateNewCfnProjectParameters(scope, id, props); err != nil {
+	if err := validateNewCfnResourcePolicyParameters(scope, id, props); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_CfnProject{}
+	j := jsiiProxy_CfnResourcePolicy{}
 
 	_jsii_.Create(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnResourcePolicy",
 		[]interface{}{scope, id, props},
 		&j,
 	)
@@ -352,12 +364,12 @@ func NewCfnProject(scope constructs.Construct, id *string, props *CfnProjectProp
 	return &j
 }
 
-// Create a new `MongoDB::Atlas::Project`.
-func NewCfnProject_Override(c CfnProject, scope constructs.Construct, id *string, props *CfnProjectProps) {
+// Create a new `MongoDB::Atlas::ResourcePolicy`.
+func NewCfnResourcePolicy_Override(c CfnResourcePolicy, scope constructs.Construct, id *string, props *CfnResourcePolicyProps) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnResourcePolicy",
 		[]interface{}{scope, id, props},
 		c,
 	)
@@ -369,16 +381,16 @@ func NewCfnProject_Override(c CfnProject, scope constructs.Construct, id *string
 // versions of this library to be included in the same stack.
 //
 // Returns: The construct as a stack element or undefined if it is not a stack element.
-func CfnProject_IsCfnElement(x interface{}) *bool {
+func CfnResourcePolicy_IsCfnElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnProject_IsCfnElementParameters(x); err != nil {
+	if err := validateCfnResourcePolicy_IsCfnElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnResourcePolicy",
 		"isCfnElement",
 		[]interface{}{x},
 		&returns,
@@ -388,16 +400,16 @@ func CfnProject_IsCfnElement(x interface{}) *bool {
 }
 
 // Check whether the given construct is a CfnResource.
-func CfnProject_IsCfnResource(construct constructs.IConstruct) *bool {
+func CfnResourcePolicy_IsCfnResource(construct constructs.IConstruct) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnProject_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnResourcePolicy_IsCfnResourceParameters(construct); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnResourcePolicy",
 		"isCfnResource",
 		[]interface{}{construct},
 		&returns,
@@ -410,16 +422,16 @@ func CfnProject_IsCfnResource(construct constructs.IConstruct) *bool {
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
 // Deprecated: use `x instanceof Construct` instead.
-func CfnProject_IsConstruct(x interface{}) *bool {
+func CfnResourcePolicy_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnProject_IsConstructParameters(x); err != nil {
+	if err := validateCfnResourcePolicy_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnResourcePolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -428,18 +440,18 @@ func CfnProject_IsConstruct(x interface{}) *bool {
 	return returns
 }
 
-func CfnProject_CFN_RESOURCE_TYPE_NAME() *string {
+func CfnResourcePolicy_CFN_RESOURCE_TYPE_NAME() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"awscdk-resources-mongodbatlas.CfnProject",
+		"awscdk-resources-mongodbatlas.CfnResourcePolicy",
 		"CFN_RESOURCE_TYPE_NAME",
 		&returns,
 	)
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) AddDeletionOverride(path *string) {
+func (c *jsiiProxy_CfnResourcePolicy) AddDeletionOverride(path *string) {
 	if err := c.validateAddDeletionOverrideParameters(path); err != nil {
 		panic(err)
 	}
@@ -450,7 +462,7 @@ func (c *jsiiProxy_CfnProject) AddDeletionOverride(path *string) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddDependency(target awscdk.CfnResource) {
+func (c *jsiiProxy_CfnResourcePolicy) AddDependency(target awscdk.CfnResource) {
 	if err := c.validateAddDependencyParameters(target); err != nil {
 		panic(err)
 	}
@@ -461,7 +473,7 @@ func (c *jsiiProxy_CfnProject) AddDependency(target awscdk.CfnResource) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddDependsOn(target awscdk.CfnResource) {
+func (c *jsiiProxy_CfnResourcePolicy) AddDependsOn(target awscdk.CfnResource) {
 	if err := c.validateAddDependsOnParameters(target); err != nil {
 		panic(err)
 	}
@@ -472,7 +484,7 @@ func (c *jsiiProxy_CfnProject) AddDependsOn(target awscdk.CfnResource) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddMetadata(key *string, value interface{}) {
+func (c *jsiiProxy_CfnResourcePolicy) AddMetadata(key *string, value interface{}) {
 	if err := c.validateAddMetadataParameters(key, value); err != nil {
 		panic(err)
 	}
@@ -483,7 +495,7 @@ func (c *jsiiProxy_CfnProject) AddMetadata(key *string, value interface{}) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CfnResourcePolicy) AddOverride(path *string, value interface{}) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
@@ -494,7 +506,7 @@ func (c *jsiiProxy_CfnProject) AddOverride(path *string, value interface{}) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddPropertyDeletionOverride(propertyPath *string) {
+func (c *jsiiProxy_CfnResourcePolicy) AddPropertyDeletionOverride(propertyPath *string) {
 	if err := c.validateAddPropertyDeletionOverrideParameters(propertyPath); err != nil {
 		panic(err)
 	}
@@ -505,7 +517,7 @@ func (c *jsiiProxy_CfnProject) AddPropertyDeletionOverride(propertyPath *string)
 	)
 }
 
-func (c *jsiiProxy_CfnProject) AddPropertyOverride(propertyPath *string, value interface{}) {
+func (c *jsiiProxy_CfnResourcePolicy) AddPropertyOverride(propertyPath *string, value interface{}) {
 	if err := c.validateAddPropertyOverrideParameters(propertyPath, value); err != nil {
 		panic(err)
 	}
@@ -516,7 +528,7 @@ func (c *jsiiProxy_CfnProject) AddPropertyOverride(propertyPath *string, value i
 	)
 }
 
-func (c *jsiiProxy_CfnProject) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, options *awscdk.RemovalPolicyOptions) {
+func (c *jsiiProxy_CfnResourcePolicy) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, options *awscdk.RemovalPolicyOptions) {
 	if err := c.validateApplyRemovalPolicyParameters(options); err != nil {
 		panic(err)
 	}
@@ -527,7 +539,7 @@ func (c *jsiiProxy_CfnProject) ApplyRemovalPolicy(policy awscdk.RemovalPolicy, o
 	)
 }
 
-func (c *jsiiProxy_CfnProject) GetAtt(attributeName *string, typeHint awscdk.ResolutionTypeHint) awscdk.Reference {
+func (c *jsiiProxy_CfnResourcePolicy) GetAtt(attributeName *string, typeHint awscdk.ResolutionTypeHint) awscdk.Reference {
 	if err := c.validateGetAttParameters(attributeName); err != nil {
 		panic(err)
 	}
@@ -543,7 +555,7 @@ func (c *jsiiProxy_CfnProject) GetAtt(attributeName *string, typeHint awscdk.Res
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) GetMetadata(key *string) interface{} {
+func (c *jsiiProxy_CfnResourcePolicy) GetMetadata(key *string) interface{} {
 	if err := c.validateGetMetadataParameters(key); err != nil {
 		panic(err)
 	}
@@ -559,7 +571,7 @@ func (c *jsiiProxy_CfnProject) GetMetadata(key *string) interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ObtainDependencies() *[]interface{} {
+func (c *jsiiProxy_CfnResourcePolicy) ObtainDependencies() *[]interface{} {
 	var returns *[]interface{}
 
 	_jsii_.Invoke(
@@ -572,7 +584,7 @@ func (c *jsiiProxy_CfnProject) ObtainDependencies() *[]interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ObtainResourceDependencies() *[]awscdk.CfnResource {
+func (c *jsiiProxy_CfnResourcePolicy) ObtainResourceDependencies() *[]awscdk.CfnResource {
 	var returns *[]awscdk.CfnResource
 
 	_jsii_.Invoke(
@@ -585,7 +597,7 @@ func (c *jsiiProxy_CfnProject) ObtainResourceDependencies() *[]awscdk.CfnResourc
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) OverrideLogicalId(newLogicalId *string) {
+func (c *jsiiProxy_CfnResourcePolicy) OverrideLogicalId(newLogicalId *string) {
 	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
@@ -596,7 +608,7 @@ func (c *jsiiProxy_CfnProject) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) RemoveDependency(target awscdk.CfnResource) {
+func (c *jsiiProxy_CfnResourcePolicy) RemoveDependency(target awscdk.CfnResource) {
 	if err := c.validateRemoveDependencyParameters(target); err != nil {
 		panic(err)
 	}
@@ -607,7 +619,7 @@ func (c *jsiiProxy_CfnProject) RemoveDependency(target awscdk.CfnResource) {
 	)
 }
 
-func (c *jsiiProxy_CfnProject) RenderProperties(props *map[string]interface{}) *map[string]interface{} {
+func (c *jsiiProxy_CfnResourcePolicy) RenderProperties(props *map[string]interface{}) *map[string]interface{} {
 	if err := c.validateRenderPropertiesParameters(props); err != nil {
 		panic(err)
 	}
@@ -623,7 +635,7 @@ func (c *jsiiProxy_CfnProject) RenderProperties(props *map[string]interface{}) *
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ReplaceDependency(target awscdk.CfnResource, newTarget awscdk.CfnResource) {
+func (c *jsiiProxy_CfnResourcePolicy) ReplaceDependency(target awscdk.CfnResource, newTarget awscdk.CfnResource) {
 	if err := c.validateReplaceDependencyParameters(target, newTarget); err != nil {
 		panic(err)
 	}
@@ -634,7 +646,7 @@ func (c *jsiiProxy_CfnProject) ReplaceDependency(target awscdk.CfnResource, newT
 	)
 }
 
-func (c *jsiiProxy_CfnProject) ShouldSynthesize() *bool {
+func (c *jsiiProxy_CfnResourcePolicy) ShouldSynthesize() *bool {
 	var returns *bool
 
 	_jsii_.Invoke(
@@ -647,7 +659,7 @@ func (c *jsiiProxy_CfnProject) ShouldSynthesize() *bool {
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ToString() *string {
+func (c *jsiiProxy_CfnResourcePolicy) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -660,7 +672,7 @@ func (c *jsiiProxy_CfnProject) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CfnProject) ValidateProperties(_properties interface{}) {
+func (c *jsiiProxy_CfnResourcePolicy) ValidateProperties(_properties interface{}) {
 	if err := c.validateValidatePropertiesParameters(_properties); err != nil {
 		panic(err)
 	}

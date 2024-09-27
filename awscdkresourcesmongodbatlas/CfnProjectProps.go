@@ -11,6 +11,8 @@ type CfnProjectProps struct {
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
 	// API keys that you assigned to the specified project.
 	ProjectApiKeys *[]*ProjectApiKey `field:"optional" json:"projectApiKeys" yaml:"projectApiKeys"`
+	// Unique identifier of the organization within which to create the project.
+	ProjectOwnerId *string `field:"optional" json:"projectOwnerId" yaml:"projectOwnerId"`
 	ProjectSettings *ProjectSettings `field:"optional" json:"projectSettings" yaml:"projectSettings"`
 	// Teams to which the authenticated user has access in the project specified using its unique 24-hexadecimal digit identifier.
 	ProjectTeams *[]*ProjectTeam `field:"optional" json:"projectTeams" yaml:"projectTeams"`
