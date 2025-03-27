@@ -18,6 +18,10 @@ type CfnOrganizationProps struct {
 	//
 	// If specified, the proposed Organization Owner of the new organization must have the Organization Owner role in an organization associated with the federation.
 	FederatedSettingsId *string `field:"optional" json:"federatedSettingsId" yaml:"federatedSettingsId"`
+	// Flag that indicates whether this organization has access to generative AI features.
+	//
+	// This setting only applies to Atlas Commercial and defaults to `true`. With this setting on, Project Owners may be able to enable or disable individual AI features at the project level. To learn more, see https://www.mongodb.com/docs/generative-ai-faq/
+	GenAiFeaturesEnabled *bool `field:"optional" json:"genAiFeaturesEnabled" yaml:"genAiFeaturesEnabled"`
 	// Flag that indicates whether this organization has been deleted.
 	IsDeleted *bool `field:"optional" json:"isDeleted" yaml:"isDeleted"`
 	// Flag that indicates whether to require users to set up Multi-Factor Authentication (MFA) before accessing the specified organization.
@@ -30,5 +34,11 @@ type CfnOrganizationProps struct {
 	//
 	// Once this setting is turned on, you can grant MongoDB Support a 24-hour bypass access to the Atlas deployment to resolve support issues. To learn more, see: https://www.mongodb.com/docs/atlas/security-restrict-support-access/.
 	RestrictEmployeeAccess *bool `field:"optional" json:"restrictEmployeeAccess" yaml:"restrictEmployeeAccess"`
+	// Disables automatic alert creation.
+	//
+	// When set to `true`, Atlas doesn't automatically create organization-level alerts. Defaults to `true` for new Atlas Organizations created with the provider to prevent infrastructure drift caused by creation of new alerts.
+	// Default: true` for new Atlas Organizations created with the provider to prevent infrastructure drift caused by creation of new alerts.
+	//
+	SkipDefaultAlertsSettings *bool `field:"optional" json:"skipDefaultAlertsSettings" yaml:"skipDefaultAlertsSettings"`
 }
 

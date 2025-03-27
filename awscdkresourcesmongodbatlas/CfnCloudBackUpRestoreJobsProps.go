@@ -8,6 +8,8 @@ type CfnCloudBackUpRestoreJobsProps struct {
 	// The instance name of the Serverless/Cluster whose snapshot you want to restore or you want to retrieve restore jobs.
 	InstanceName *string `field:"required" json:"instanceName" yaml:"instanceName"`
 	// Type of instance specified on the Instance Name serverless or cluster.
+	//
+	// **WARNING:** `serverless` instance type is deprecated and will be removed in January 2026. For more details, see [Migrate your programmatic tools from M2, M5, or Serverless Instances to Flex Clusters](https://www.mongodb.com/docs/atlas/flex-migration/).
 	InstanceType CfnCloudBackUpRestoreJobsPropsInstanceType `field:"required" json:"instanceType" yaml:"instanceType"`
 	// The unique identifier of the project for the Atlas cluster.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`

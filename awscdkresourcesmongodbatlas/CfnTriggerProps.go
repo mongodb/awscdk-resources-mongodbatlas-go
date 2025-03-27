@@ -19,7 +19,7 @@ type CfnTriggerProps struct {
 	//
 	// For an example configuration object, see
 	// [Send Trigger Events to AWS
-	// EventBridge](https://www.mongodb.com/docs/realm/triggers/examples/send-events-aws-eventbridge#std-label-event_processor_example).
+	// EventBridge](https://www.mongodb.com/docs/atlas/app-services/triggers/aws-eventbridge/#std-label-event_processor_example).
 	EventProcessors *Event `field:"optional" json:"eventProcessors" yaml:"eventProcessors"`
 	// The ID of the function that the trigger calls when it fires.
 	//

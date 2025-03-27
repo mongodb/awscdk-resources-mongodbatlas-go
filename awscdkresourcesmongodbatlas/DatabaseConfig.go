@@ -19,6 +19,8 @@ type DatabaseConfig struct {
 	FullDocumentBeforeChange *bool `field:"optional" json:"fullDocumentBeforeChange" yaml:"fullDocumentBeforeChange"`
 	// stringify version of a [$match](https://www.mongodb.com/docs/manual/reference/operator/aggregation/match) expression filters change events. The trigger will only fire if the expression evaluates to true for a given change event.
 	Match *string `field:"optional" json:"match" yaml:"match"`
+	// If `true`, the trigger will use the maximize throughput option (https://www.mongodb.com/docs/atlas/app-services/triggers/database-triggers/#std-label-triggers-maximum-throughput).
+	MaximumThroughput *bool `field:"optional" json:"maximumThroughput" yaml:"maximumThroughput"`
 	// The type(s) of MongoDB change event that the trigger listens for.
 	OperationTypes *[]DatabaseConfigOperationTypes `field:"optional" json:"operationTypes" yaml:"operationTypes"`
 	// stringify version of a [$project](https://www.mongodb.com/docs/manual/reference/operator/aggregation/project/) expressions to limit the data included in each event.

@@ -1,7 +1,9 @@
 package awscdkresourcesmongodbatlas
 
 
-// Returns, adds, edits, and removes serverless instances.
+// **WARNING:** This resource is deprecated and will be removed in January 2026.
+//
+// For more details, see [Migrate your programmatic tools from M2, M5, or Serverless Instances to Flex Clusters](https://www.mongodb.com/docs/atlas/flex-migration/). Returns, adds, edits, and removes serverless instances.
 type CfnServerlessInstanceProps struct {
 	// Collection of Uniform Resource Locators that point to the MongoDB database.
 	ConnectionStrings *ServerlessInstanceConnectionStrings `field:"optional" json:"connectionStrings" yaml:"connectionStrings"`
