@@ -23,6 +23,8 @@ type CfnDatabaseUserProps struct {
 	//
 	// This parameter expresses its value in the ISO 8601 timestamp format in UTC and can include the time zone designation. You must specify a future date that falls within one week of making the Application Programming Interface (API) request.
 	DeleteAfterDate *string `field:"optional" json:"deleteAfterDate" yaml:"deleteAfterDate"`
+	// Description of this database user.
+	Description *string `field:"optional" json:"description" yaml:"description"`
 	// List that contains the key-value pairs for tagging and categorizing the MongoDB database user.
 	//
 	// The labels that you define do not appear in the console.

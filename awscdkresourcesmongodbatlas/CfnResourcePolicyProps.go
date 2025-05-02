@@ -13,6 +13,8 @@ type CfnResourcePolicyProps struct {
 	Policies *[]*ApiAtlasPolicy `field:"required" json:"policies" yaml:"policies"`
 	// The user that last updated the atlas resource policy.
 	CreatedByUser *ApiAtlasUserMetadata `field:"optional" json:"createdByUser" yaml:"createdByUser"`
+	// Description of the Atlas resource policy.
+	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The user that last updated the atlas resource policy.
 	LastUpdatedByUser *ApiAtlasUserMetadata `field:"optional" json:"lastUpdatedByUser" yaml:"lastUpdatedByUser"`
 	// Profile used to provide credentials information, (a secret with the cfn/atlas/profile/{Profile}, is required), if not provided default is used.
