@@ -3,6 +3,8 @@ package awscdkresourcesmongodbatlas
 
 // Advanced configuration details to add for one cluster in the specified project.
 type ProcessArgs struct {
+	// The custom OpenSSL cipher suite list for TLS 1.2. This field is only valid when `tls_cipher_config_mode` is set to `CUSTOM`.
+	CustomOpensslCipherConfigTls12 *[]*string `field:"optional" json:"customOpensslCipherConfigTls12" yaml:"customOpensslCipherConfigTls12"`
 	// Default level of acknowledgment requested from MongoDB for read operations set for this cluster.
 	DefaultReadConcern *string `field:"optional" json:"defaultReadConcern" yaml:"defaultReadConcern"`
 	// Default level of acknowledgment requested from MongoDB for write operations set for this cluster.
@@ -31,6 +33,10 @@ type ProcessArgs struct {
 	SampleRefreshIntervalBiConnector *float64 `field:"optional" json:"sampleRefreshIntervalBiConnector" yaml:"sampleRefreshIntervalBiConnector"`
 	// Interval in seconds at which the mongosqld process re-samples data to create its relational schema.
 	SampleSizeBiConnector *float64 `field:"optional" json:"sampleSizeBiConnector" yaml:"sampleSizeBiConnector"`
+	// The TLS cipher suite configuration mode.
+	//
+	// Valid values include `CUSTOM` or `DEFAULT`. The `DEFAULT` mode uses the default cipher suites. The `CUSTOM` mode allows you to specify custom cipher suites for both TLS 1.2 and TLS 1.3. To unset, this should be set back to `DEFAULT`.
+	TlsCipherConfigMode *string `field:"optional" json:"tlsCipherConfigMode" yaml:"tlsCipherConfigMode"`
 	// Lifetime, in seconds, of multi-document transactions.
 	//
 	// Atlas considers the transactions that exceed this limit as expired and so aborts them through a periodic cleanup process.
