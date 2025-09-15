@@ -68,7 +68,7 @@ func validateCfnPrivateEndpointAdl_IsCfnElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCfnPrivateEndpointAdl_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnPrivateEndpointAdl_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

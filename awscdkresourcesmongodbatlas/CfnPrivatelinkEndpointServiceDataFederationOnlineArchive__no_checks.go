@@ -68,7 +68,7 @@ func validateCfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsCfnEleme
 	return nil
 }
 
-func validateCfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

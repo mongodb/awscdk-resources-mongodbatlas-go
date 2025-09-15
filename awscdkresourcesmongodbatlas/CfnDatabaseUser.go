@@ -363,11 +363,11 @@ func CfnDatabaseUser_IsCfnElement(x interface{}) *bool {
 	return returns
 }
 
-// Check whether the given construct is a CfnResource.
-func CfnDatabaseUser_IsCfnResource(construct constructs.IConstruct) *bool {
+// Check whether the given object is a CfnResource.
+func CfnDatabaseUser_IsCfnResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnDatabaseUser_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnDatabaseUser_IsCfnResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
@@ -375,7 +375,7 @@ func CfnDatabaseUser_IsCfnResource(construct constructs.IConstruct) *bool {
 	_jsii_.StaticInvoke(
 		"awscdk-resources-mongodbatlas.CfnDatabaseUser",
 		"isCfnResource",
-		[]interface{}{construct},
+		[]interface{}{x},
 		&returns,
 	)
 

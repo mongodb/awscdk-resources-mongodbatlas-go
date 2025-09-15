@@ -447,11 +447,11 @@ func CfnCloudBackUpRestoreJobs_IsCfnElement(x interface{}) *bool {
 	return returns
 }
 
-// Check whether the given construct is a CfnResource.
-func CfnCloudBackUpRestoreJobs_IsCfnResource(construct constructs.IConstruct) *bool {
+// Check whether the given object is a CfnResource.
+func CfnCloudBackUpRestoreJobs_IsCfnResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnCloudBackUpRestoreJobs_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnCloudBackUpRestoreJobs_IsCfnResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
@@ -459,7 +459,7 @@ func CfnCloudBackUpRestoreJobs_IsCfnResource(construct constructs.IConstruct) *b
 	_jsii_.StaticInvoke(
 		"awscdk-resources-mongodbatlas.CfnCloudBackUpRestoreJobs",
 		"isCfnResource",
-		[]interface{}{construct},
+		[]interface{}{x},
 		&returns,
 	)
 

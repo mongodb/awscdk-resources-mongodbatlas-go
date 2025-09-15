@@ -399,11 +399,11 @@ func CfnFederatedQueryLimit_IsCfnElement(x interface{}) *bool {
 	return returns
 }
 
-// Check whether the given construct is a CfnResource.
-func CfnFederatedQueryLimit_IsCfnResource(construct constructs.IConstruct) *bool {
+// Check whether the given object is a CfnResource.
+func CfnFederatedQueryLimit_IsCfnResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnFederatedQueryLimit_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnFederatedQueryLimit_IsCfnResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
@@ -411,7 +411,7 @@ func CfnFederatedQueryLimit_IsCfnResource(construct constructs.IConstruct) *bool
 	_jsii_.StaticInvoke(
 		"awscdk-resources-mongodbatlas.CfnFederatedQueryLimit",
 		"isCfnResource",
-		[]interface{}{construct},
+		[]interface{}{x},
 		&returns,
 	)
 

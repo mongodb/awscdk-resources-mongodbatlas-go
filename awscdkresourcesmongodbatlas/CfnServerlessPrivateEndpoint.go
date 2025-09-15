@@ -423,11 +423,11 @@ func CfnServerlessPrivateEndpoint_IsCfnElement(x interface{}) *bool {
 	return returns
 }
 
-// Check whether the given construct is a CfnResource.
-func CfnServerlessPrivateEndpoint_IsCfnResource(construct constructs.IConstruct) *bool {
+// Check whether the given object is a CfnResource.
+func CfnServerlessPrivateEndpoint_IsCfnResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnServerlessPrivateEndpoint_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnServerlessPrivateEndpoint_IsCfnResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
@@ -435,7 +435,7 @@ func CfnServerlessPrivateEndpoint_IsCfnResource(construct constructs.IConstruct)
 	_jsii_.StaticInvoke(
 		"awscdk-resources-mongodbatlas.CfnServerlessPrivateEndpoint",
 		"isCfnResource",
-		[]interface{}{construct},
+		[]interface{}{x},
 		&returns,
 	)
 

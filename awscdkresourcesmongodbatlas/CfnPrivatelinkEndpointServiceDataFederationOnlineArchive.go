@@ -351,11 +351,11 @@ func CfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsCfnElement(x int
 	return returns
 }
 
-// Check whether the given construct is a CfnResource.
-func CfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsCfnResource(construct constructs.IConstruct) *bool {
+// Check whether the given object is a CfnResource.
+func CfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsCfnResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsCfnResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
@@ -363,7 +363,7 @@ func CfnPrivatelinkEndpointServiceDataFederationOnlineArchive_IsCfnResource(cons
 	_jsii_.StaticInvoke(
 		"awscdk-resources-mongodbatlas.CfnPrivatelinkEndpointServiceDataFederationOnlineArchive",
 		"isCfnResource",
-		[]interface{}{construct},
+		[]interface{}{x},
 		&returns,
 	)
 

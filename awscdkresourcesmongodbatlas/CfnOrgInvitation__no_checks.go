@@ -68,7 +68,7 @@ func validateCfnOrgInvitation_IsCfnElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCfnOrgInvitation_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnOrgInvitation_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

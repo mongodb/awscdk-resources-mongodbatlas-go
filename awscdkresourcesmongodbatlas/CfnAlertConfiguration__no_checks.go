@@ -68,7 +68,7 @@ func validateCfnAlertConfiguration_IsCfnElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCfnAlertConfiguration_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnAlertConfiguration_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

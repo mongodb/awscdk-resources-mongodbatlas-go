@@ -399,11 +399,11 @@ func CfnProjectInvitation_IsCfnElement(x interface{}) *bool {
 	return returns
 }
 
-// Check whether the given construct is a CfnResource.
-func CfnProjectInvitation_IsCfnResource(construct constructs.IConstruct) *bool {
+// Check whether the given object is a CfnResource.
+func CfnProjectInvitation_IsCfnResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnProjectInvitation_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnProjectInvitation_IsCfnResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
@@ -411,7 +411,7 @@ func CfnProjectInvitation_IsCfnResource(construct constructs.IConstruct) *bool {
 	_jsii_.StaticInvoke(
 		"awscdk-resources-mongodbatlas.CfnProjectInvitation",
 		"isCfnResource",
-		[]interface{}{construct},
+		[]interface{}{x},
 		&returns,
 	)
 

@@ -68,7 +68,7 @@ func validateCfnPrivateEndPointRegionalMode_IsCfnElementParameters(x interface{}
 	return nil
 }
 
-func validateCfnPrivateEndPointRegionalMode_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnPrivateEndPointRegionalMode_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

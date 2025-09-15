@@ -68,7 +68,7 @@ func validateCfnDataLakePipeline_IsCfnElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCfnDataLakePipeline_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnDataLakePipeline_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

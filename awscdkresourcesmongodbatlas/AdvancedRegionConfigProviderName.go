@@ -12,5 +12,7 @@ const (
 	AdvancedRegionConfigProviderName_AZURE AdvancedRegionConfigProviderName = "AZURE"
 	// TENANT.
 	AdvancedRegionConfigProviderName_TENANT AdvancedRegionConfigProviderName = "TENANT"
+	// FLEX.
+	AdvancedRegionConfigProviderName_FLEX AdvancedRegionConfigProviderName = "FLEX"
 )
 

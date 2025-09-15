@@ -68,7 +68,7 @@ func validateCfnServerlessInstance_IsCfnElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCfnServerlessInstance_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnServerlessInstance_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

@@ -363,11 +363,11 @@ func CfnProjectIpAccessList_IsCfnElement(x interface{}) *bool {
 	return returns
 }
 
-// Check whether the given construct is a CfnResource.
-func CfnProjectIpAccessList_IsCfnResource(construct constructs.IConstruct) *bool {
+// Check whether the given object is a CfnResource.
+func CfnProjectIpAccessList_IsCfnResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnProjectIpAccessList_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnProjectIpAccessList_IsCfnResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
@@ -375,7 +375,7 @@ func CfnProjectIpAccessList_IsCfnResource(construct constructs.IConstruct) *bool
 	_jsii_.StaticInvoke(
 		"awscdk-resources-mongodbatlas.CfnProjectIpAccessList",
 		"isCfnResource",
-		[]interface{}{construct},
+		[]interface{}{x},
 		&returns,
 	)
 

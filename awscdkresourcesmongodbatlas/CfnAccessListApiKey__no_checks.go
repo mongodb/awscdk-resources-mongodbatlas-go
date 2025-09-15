@@ -68,7 +68,7 @@ func validateCfnAccessListApiKey_IsCfnElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCfnAccessListApiKey_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnAccessListApiKey_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

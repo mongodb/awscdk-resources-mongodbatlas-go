@@ -68,7 +68,7 @@ func validateCfnX509AuthenticationDatabaseUser_IsCfnElementParameters(x interfac
 	return nil
 }
 
-func validateCfnX509AuthenticationDatabaseUser_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnX509AuthenticationDatabaseUser_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

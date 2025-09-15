@@ -68,7 +68,7 @@ func validateCfnClusterOutageSimulation_IsCfnElementParameters(x interface{}) er
 	return nil
 }
 
-func validateCfnClusterOutageSimulation_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnClusterOutageSimulation_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

@@ -68,7 +68,7 @@ func validateCfnNetworkPeering_IsCfnElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCfnNetworkPeering_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnNetworkPeering_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

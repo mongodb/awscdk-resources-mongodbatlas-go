@@ -68,7 +68,7 @@ func validateCfnLdapVerify_IsCfnElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCfnLdapVerify_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnLdapVerify_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

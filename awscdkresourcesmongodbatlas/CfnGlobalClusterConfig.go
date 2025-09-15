@@ -363,11 +363,11 @@ func CfnGlobalClusterConfig_IsCfnElement(x interface{}) *bool {
 	return returns
 }
 
-// Check whether the given construct is a CfnResource.
-func CfnGlobalClusterConfig_IsCfnResource(construct constructs.IConstruct) *bool {
+// Check whether the given object is a CfnResource.
+func CfnGlobalClusterConfig_IsCfnResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnGlobalClusterConfig_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnGlobalClusterConfig_IsCfnResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
@@ -375,7 +375,7 @@ func CfnGlobalClusterConfig_IsCfnResource(construct constructs.IConstruct) *bool
 	_jsii_.StaticInvoke(
 		"awscdk-resources-mongodbatlas.CfnGlobalClusterConfig",
 		"isCfnResource",
-		[]interface{}{construct},
+		[]interface{}{x},
 		&returns,
 	)
 

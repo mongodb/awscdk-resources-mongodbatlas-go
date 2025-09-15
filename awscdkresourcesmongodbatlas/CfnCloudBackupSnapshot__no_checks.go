@@ -68,7 +68,7 @@ func validateCfnCloudBackupSnapshot_IsCfnElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateCfnCloudBackupSnapshot_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnCloudBackupSnapshot_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

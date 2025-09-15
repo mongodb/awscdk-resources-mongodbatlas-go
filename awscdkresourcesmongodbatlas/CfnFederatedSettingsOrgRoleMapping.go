@@ -363,11 +363,11 @@ func CfnFederatedSettingsOrgRoleMapping_IsCfnElement(x interface{}) *bool {
 	return returns
 }
 
-// Check whether the given construct is a CfnResource.
-func CfnFederatedSettingsOrgRoleMapping_IsCfnResource(construct constructs.IConstruct) *bool {
+// Check whether the given object is a CfnResource.
+func CfnFederatedSettingsOrgRoleMapping_IsCfnResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnFederatedSettingsOrgRoleMapping_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnFederatedSettingsOrgRoleMapping_IsCfnResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
@@ -375,7 +375,7 @@ func CfnFederatedSettingsOrgRoleMapping_IsCfnResource(construct constructs.ICons
 	_jsii_.StaticInvoke(
 		"awscdk-resources-mongodbatlas.CfnFederatedSettingsOrgRoleMapping",
 		"isCfnResource",
-		[]interface{}{construct},
+		[]interface{}{x},
 		&returns,
 	)
 

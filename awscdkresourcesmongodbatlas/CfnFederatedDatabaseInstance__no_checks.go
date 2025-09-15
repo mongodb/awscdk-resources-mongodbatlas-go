@@ -68,7 +68,7 @@ func validateCfnFederatedDatabaseInstance_IsCfnElementParameters(x interface{}) 
 	return nil
 }
 
-func validateCfnFederatedDatabaseInstance_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnFederatedDatabaseInstance_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

@@ -363,11 +363,11 @@ func CfnEncryptionAtRest_IsCfnElement(x interface{}) *bool {
 	return returns
 }
 
-// Check whether the given construct is a CfnResource.
-func CfnEncryptionAtRest_IsCfnResource(construct constructs.IConstruct) *bool {
+// Check whether the given object is a CfnResource.
+func CfnEncryptionAtRest_IsCfnResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnEncryptionAtRest_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnEncryptionAtRest_IsCfnResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
@@ -375,7 +375,7 @@ func CfnEncryptionAtRest_IsCfnResource(construct constructs.IConstruct) *bool {
 	_jsii_.StaticInvoke(
 		"awscdk-resources-mongodbatlas.CfnEncryptionAtRest",
 		"isCfnResource",
-		[]interface{}{construct},
+		[]interface{}{x},
 		&returns,
 	)
 

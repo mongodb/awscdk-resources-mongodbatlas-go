@@ -68,7 +68,7 @@ func validateCfnFederatedSettingsOrgRoleMapping_IsCfnElementParameters(x interfa
 	return nil
 }
 
-func validateCfnFederatedSettingsOrgRoleMapping_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnFederatedSettingsOrgRoleMapping_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

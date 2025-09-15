@@ -68,7 +68,7 @@ func validateCfnSearchDeployment_IsCfnElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCfnSearchDeployment_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnSearchDeployment_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

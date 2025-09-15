@@ -351,11 +351,11 @@ func CfnCustomDnsConfigurationClusterAws_IsCfnElement(x interface{}) *bool {
 	return returns
 }
 
-// Check whether the given construct is a CfnResource.
-func CfnCustomDnsConfigurationClusterAws_IsCfnResource(construct constructs.IConstruct) *bool {
+// Check whether the given object is a CfnResource.
+func CfnCustomDnsConfigurationClusterAws_IsCfnResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnCustomDnsConfigurationClusterAws_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnCustomDnsConfigurationClusterAws_IsCfnResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
@@ -363,7 +363,7 @@ func CfnCustomDnsConfigurationClusterAws_IsCfnResource(construct constructs.ICon
 	_jsii_.StaticInvoke(
 		"awscdk-resources-mongodbatlas.CfnCustomDnsConfigurationClusterAws",
 		"isCfnResource",
-		[]interface{}{construct},
+		[]interface{}{x},
 		&returns,
 	)
 

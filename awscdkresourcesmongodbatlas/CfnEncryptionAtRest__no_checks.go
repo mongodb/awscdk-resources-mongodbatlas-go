@@ -68,7 +68,7 @@ func validateCfnEncryptionAtRest_IsCfnElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCfnEncryptionAtRest_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnEncryptionAtRest_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 

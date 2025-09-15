@@ -387,11 +387,11 @@ func CfnDataLakes_IsCfnElement(x interface{}) *bool {
 	return returns
 }
 
-// Check whether the given construct is a CfnResource.
-func CfnDataLakes_IsCfnResource(construct constructs.IConstruct) *bool {
+// Check whether the given object is a CfnResource.
+func CfnDataLakes_IsCfnResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateCfnDataLakes_IsCfnResourceParameters(construct); err != nil {
+	if err := validateCfnDataLakes_IsCfnResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
@@ -399,7 +399,7 @@ func CfnDataLakes_IsCfnResource(construct constructs.IConstruct) *bool {
 	_jsii_.StaticInvoke(
 		"awscdk-resources-mongodbatlas.CfnDataLakes",
 		"isCfnResource",
-		[]interface{}{construct},
+		[]interface{}{x},
 		&returns,
 	)
 

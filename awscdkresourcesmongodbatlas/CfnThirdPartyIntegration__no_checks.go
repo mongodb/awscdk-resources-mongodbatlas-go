@@ -68,7 +68,7 @@ func validateCfnThirdPartyIntegration_IsCfnElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateCfnThirdPartyIntegration_IsCfnResourceParameters(construct constructs.IConstruct) error {
+func validateCfnThirdPartyIntegration_IsCfnResourceParameters(x interface{}) error {
 	return nil
 }
 
