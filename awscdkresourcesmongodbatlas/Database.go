@@ -8,7 +8,7 @@ type Database struct {
 	//
 	// This only applies to S3 data sources.
 	MaxWildcardCollections *string `field:"optional" json:"maxWildcardCollections" yaml:"maxWildcardCollections"`
-	// Human-readable label that identifies the database to which the data lake maps data.
+	// Human-readable label that identifies the database to which the Atlas Data Federation maps data.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Array of aggregation pipelines that apply to the collection.
 	//

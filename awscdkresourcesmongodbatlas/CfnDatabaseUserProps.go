@@ -39,9 +39,9 @@ type CfnDatabaseUserProps struct {
 	Password *string `field:"optional" json:"password" yaml:"password"`
 	// Profile used to provide credentials information, (a secret with the cfn/atlas/profile/{Profile}, is required), if not provided `default` is used.
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
-	// List that contains clusters and MongoDB Atlas Data Lakes that this database user can access.
+	// List that contains clusters and MongoDB Atlas Data Federation that this database user can access.
 	//
-	// If omitted, MongoDB Cloud grants the database user access to all the clusters and MongoDB Atlas Data Lakes in the project.
+	// If omitted, MongoDB Cloud grants the database user access to all the clusters and MongoDB Atlas Data Federation in the project.
 	Scopes *[]*ScopeDefinition `field:"optional" json:"scopes" yaml:"scopes"`
 	// Method that briefs who owns the certificate provided.
 	//

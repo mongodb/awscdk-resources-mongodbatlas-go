@@ -34,7 +34,7 @@ type DataSource struct {
 	StoreName *string `field:"optional" json:"storeName" yaml:"storeName"`
 	// URLs of the publicly accessible data files.
 	//
-	// You can't specify URLs that require authentication. Atlas Data Lake creates a partition for each URL. If empty or omitted, Data Lake uses the URLs from the store specified in the dataSources.storeName parameter.
+	// You can't specify URLs that require authentication. Atlas Data Federation creates a partition for each URL. If empty or omitted, Data Federation uses the URLs from the store specified in the dataSources.storeName parameter.
 	Urls *[]*string `field:"optional" json:"urls" yaml:"urls"`
 }
 

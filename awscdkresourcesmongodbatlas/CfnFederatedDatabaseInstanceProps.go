@@ -7,9 +7,9 @@ type CfnFederatedDatabaseInstanceProps struct {
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Human-readable label that identifies the data federation.
 	TenantName *string `field:"required" json:"tenantName" yaml:"tenantName"`
-	// Cloud provider linked to this data lake.
+	// Cloud provider linked to this Atlas Data Federation.
 	CloudProviderConfig *CloudProviderConfig `field:"optional" json:"cloudProviderConfig" yaml:"cloudProviderConfig"`
-	// Information about the cloud provider region to which the data lake routes client connections.
+	// Information about the cloud provider region to which the Atlas Data Federation routes client connections.
 	//
 	// MongoDB Cloud supports AWS only.
 	DataProcessRegion *DataProcessRegion `field:"optional" json:"dataProcessRegion" yaml:"dataProcessRegion"`

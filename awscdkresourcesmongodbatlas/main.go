@@ -957,102 +957,6 @@ func init() {
 		reflect.TypeOf((*CfnCustomDnsConfigurationClusterAwsProps)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"awscdk-resources-mongodbatlas.CfnDataLakePipeline",
-		reflect.TypeOf((*CfnDataLakePipeline)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addDeletionOverride", GoMethod: "AddDeletionOverride"},
-			_jsii_.MemberMethod{JsiiMethod: "addDependency", GoMethod: "AddDependency"},
-			_jsii_.MemberMethod{JsiiMethod: "addDependsOn", GoMethod: "AddDependsOn"},
-			_jsii_.MemberMethod{JsiiMethod: "addMetadata", GoMethod: "AddMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
-			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
-			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "attrCreatedDate", GoGetter: "AttrCreatedDate"},
-			_jsii_.MemberProperty{JsiiProperty: "attrId", GoGetter: "AttrId"},
-			_jsii_.MemberProperty{JsiiProperty: "attrLastUpdatedDate", GoGetter: "AttrLastUpdatedDate"},
-			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
-			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberMethod{JsiiMethod: "getAtt", GoMethod: "GetAtt"},
-			_jsii_.MemberMethod{JsiiMethod: "getMetadata", GoMethod: "GetMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "logicalId", GoGetter: "LogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "obtainDependencies", GoMethod: "ObtainDependencies"},
-			_jsii_.MemberMethod{JsiiMethod: "obtainResourceDependencies", GoMethod: "ObtainResourceDependencies"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "props", GoGetter: "Props"},
-			_jsii_.MemberProperty{JsiiProperty: "ref", GoGetter: "Ref"},
-			_jsii_.MemberMethod{JsiiMethod: "removeDependency", GoMethod: "RemoveDependency"},
-			_jsii_.MemberMethod{JsiiMethod: "renderProperties", GoMethod: "RenderProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "replaceDependency", GoMethod: "ReplaceDependency"},
-			_jsii_.MemberMethod{JsiiMethod: "shouldSynthesize", GoMethod: "ShouldSynthesize"},
-			_jsii_.MemberProperty{JsiiProperty: "stack", GoGetter: "Stack"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "updatedProperites", GoGetter: "UpdatedProperites"},
-			_jsii_.MemberProperty{JsiiProperty: "updatedProperties", GoGetter: "UpdatedProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "validateProperties", GoMethod: "ValidateProperties"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CfnDataLakePipeline{}
-			_jsii_.InitJsiiProxy(&j.Type__awscdkCfnResource)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.CfnDataLakePipelineProps",
-		reflect.TypeOf((*CfnDataLakePipelineProps)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"awscdk-resources-mongodbatlas.CfnDataLakes",
-		reflect.TypeOf((*CfnDataLakes)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addDeletionOverride", GoMethod: "AddDeletionOverride"},
-			_jsii_.MemberMethod{JsiiMethod: "addDependency", GoMethod: "AddDependency"},
-			_jsii_.MemberMethod{JsiiMethod: "addDependsOn", GoMethod: "AddDependsOn"},
-			_jsii_.MemberMethod{JsiiMethod: "addMetadata", GoMethod: "AddMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
-			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
-			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "attrHostnames", GoGetter: "AttrHostnames"},
-			_jsii_.MemberProperty{JsiiProperty: "attrStartDate", GoGetter: "AttrStartDate"},
-			_jsii_.MemberProperty{JsiiProperty: "attrState", GoGetter: "AttrState"},
-			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
-			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberMethod{JsiiMethod: "getAtt", GoMethod: "GetAtt"},
-			_jsii_.MemberMethod{JsiiMethod: "getMetadata", GoMethod: "GetMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "logicalId", GoGetter: "LogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "obtainDependencies", GoMethod: "ObtainDependencies"},
-			_jsii_.MemberMethod{JsiiMethod: "obtainResourceDependencies", GoMethod: "ObtainResourceDependencies"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "props", GoGetter: "Props"},
-			_jsii_.MemberProperty{JsiiProperty: "ref", GoGetter: "Ref"},
-			_jsii_.MemberMethod{JsiiMethod: "removeDependency", GoMethod: "RemoveDependency"},
-			_jsii_.MemberMethod{JsiiMethod: "renderProperties", GoMethod: "RenderProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "replaceDependency", GoMethod: "ReplaceDependency"},
-			_jsii_.MemberMethod{JsiiMethod: "shouldSynthesize", GoMethod: "ShouldSynthesize"},
-			_jsii_.MemberProperty{JsiiProperty: "stack", GoGetter: "Stack"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "updatedProperites", GoGetter: "UpdatedProperites"},
-			_jsii_.MemberProperty{JsiiProperty: "updatedProperties", GoGetter: "UpdatedProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "validateProperties", GoMethod: "ValidateProperties"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CfnDataLakes{}
-			_jsii_.InitJsiiProxy(&j.Type__awscdkCfnResource)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.CfnDataLakesProps",
-		reflect.TypeOf((*CfnDataLakesProps)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
 		"awscdk-resources-mongodbatlas.CfnDatabaseUser",
 		reflect.TypeOf((*CfnDatabaseUser)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -1907,51 +1811,6 @@ func init() {
 			_jsii_.InitJsiiProxy(&j.Type__awscdkCfnResource)
 			return &j
 		},
-	)
-	_jsii_.RegisterClass(
-		"awscdk-resources-mongodbatlas.CfnPrivateEndpointAdl",
-		reflect.TypeOf((*CfnPrivateEndpointAdl)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addDeletionOverride", GoMethod: "AddDeletionOverride"},
-			_jsii_.MemberMethod{JsiiMethod: "addDependency", GoMethod: "AddDependency"},
-			_jsii_.MemberMethod{JsiiMethod: "addDependsOn", GoMethod: "AddDependsOn"},
-			_jsii_.MemberMethod{JsiiMethod: "addMetadata", GoMethod: "AddMetadata"},
-			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberMethod{JsiiMethod: "addPropertyDeletionOverride", GoMethod: "AddPropertyDeletionOverride"},
-			_jsii_.MemberMethod{JsiiMethod: "addPropertyOverride", GoMethod: "AddPropertyOverride"},
-			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
-			_jsii_.MemberProperty{JsiiProperty: "cfnOptions", GoGetter: "CfnOptions"},
-			_jsii_.MemberProperty{JsiiProperty: "cfnProperties", GoGetter: "CfnProperties"},
-			_jsii_.MemberProperty{JsiiProperty: "cfnResourceType", GoGetter: "CfnResourceType"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberMethod{JsiiMethod: "getAtt", GoMethod: "GetAtt"},
-			_jsii_.MemberMethod{JsiiMethod: "getMetadata", GoMethod: "GetMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "logicalId", GoGetter: "LogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberMethod{JsiiMethod: "obtainDependencies", GoMethod: "ObtainDependencies"},
-			_jsii_.MemberMethod{JsiiMethod: "obtainResourceDependencies", GoMethod: "ObtainResourceDependencies"},
-			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "props", GoGetter: "Props"},
-			_jsii_.MemberProperty{JsiiProperty: "ref", GoGetter: "Ref"},
-			_jsii_.MemberMethod{JsiiMethod: "removeDependency", GoMethod: "RemoveDependency"},
-			_jsii_.MemberMethod{JsiiMethod: "renderProperties", GoMethod: "RenderProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "replaceDependency", GoMethod: "ReplaceDependency"},
-			_jsii_.MemberMethod{JsiiMethod: "shouldSynthesize", GoMethod: "ShouldSynthesize"},
-			_jsii_.MemberProperty{JsiiProperty: "stack", GoGetter: "Stack"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "updatedProperites", GoGetter: "UpdatedProperites"},
-			_jsii_.MemberProperty{JsiiProperty: "updatedProperties", GoGetter: "UpdatedProperties"},
-			_jsii_.MemberMethod{JsiiMethod: "validateProperties", GoMethod: "ValidateProperties"},
-		},
-		func() interface{} {
-			j := jsiiProxy_CfnPrivateEndpointAdl{}
-			_jsii_.InitJsiiProxy(&j.Type__awscdkCfnResource)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.CfnPrivateEndpointAdlProps",
-		reflect.TypeOf((*CfnPrivateEndpointAdlProps)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
 		"awscdk-resources-mongodbatlas.CfnPrivateEndpointAws",
@@ -2879,78 +2738,6 @@ func init() {
 		reflect.TypeOf((*CustomerX509)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.DataLakeAwsCloudProviderConfigView",
-		reflect.TypeOf((*DataLakeAwsCloudProviderConfigView)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.DataLakeCloudProviderConfigView",
-		reflect.TypeOf((*DataLakeCloudProviderConfigView)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.DataLakeDataProcessRegionView",
-		reflect.TypeOf((*DataLakeDataProcessRegionView)(nil)).Elem(),
-	)
-	_jsii_.RegisterEnum(
-		"awscdk-resources-mongodbatlas.DataLakeDataProcessRegionViewCloudProvider",
-		reflect.TypeOf((*DataLakeDataProcessRegionViewCloudProvider)(nil)).Elem(),
-		map[string]interface{}{
-			"AWS": DataLakeDataProcessRegionViewCloudProvider_AWS,
-			"GCP": DataLakeDataProcessRegionViewCloudProvider_GCP,
-			"AZURE": DataLakeDataProcessRegionViewCloudProvider_AZURE,
-			"TENANT": DataLakeDataProcessRegionViewCloudProvider_TENANT,
-			"SERVERLESS": DataLakeDataProcessRegionViewCloudProvider_SERVERLESS,
-		},
-	)
-	_jsii_.RegisterEnum(
-		"awscdk-resources-mongodbatlas.DataLakeDataProcessRegionViewRegion",
-		reflect.TypeOf((*DataLakeDataProcessRegionViewRegion)(nil)).Elem(),
-		map[string]interface{}{
-			"DUBLIN_IRL": DataLakeDataProcessRegionViewRegion_DUBLIN_IRL,
-			"FRANKFURT_DEU": DataLakeDataProcessRegionViewRegion_FRANKFURT_DEU,
-			"LONDON_GBR": DataLakeDataProcessRegionViewRegion_LONDON_GBR,
-			"MUMBAI_IND": DataLakeDataProcessRegionViewRegion_MUMBAI_IND,
-			"OREGON_USA": DataLakeDataProcessRegionViewRegion_OREGON_USA,
-			"SYDNEY_AUS": DataLakeDataProcessRegionViewRegion_SYDNEY_AUS,
-			"VIRGINIA_USA": DataLakeDataProcessRegionViewRegion_VIRGINIA_USA,
-		},
-	)
-	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.DataLakeDatabaseCollectionView",
-		reflect.TypeOf((*DataLakeDatabaseCollectionView)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.DataLakeDatabaseDataSourceView",
-		reflect.TypeOf((*DataLakeDatabaseDataSourceView)(nil)).Elem(),
-	)
-	_jsii_.RegisterEnum(
-		"awscdk-resources-mongodbatlas.DataLakeDatabaseDataSourceViewDefaultFormat",
-		reflect.TypeOf((*DataLakeDatabaseDataSourceViewDefaultFormat)(nil)).Elem(),
-		map[string]interface{}{
-			"AVRO": DataLakeDatabaseDataSourceViewDefaultFormat_AVRO,
-			"AVRO_GZ": DataLakeDatabaseDataSourceViewDefaultFormat_AVRO_GZ,
-			"BSON": DataLakeDatabaseDataSourceViewDefaultFormat_BSON,
-			"BSON_GZ": DataLakeDatabaseDataSourceViewDefaultFormat_BSON_GZ,
-			"CSV": DataLakeDatabaseDataSourceViewDefaultFormat_CSV,
-			"JSON": DataLakeDatabaseDataSourceViewDefaultFormat_JSON,
-			"JSON_GZ": DataLakeDatabaseDataSourceViewDefaultFormat_JSON_GZ,
-			"ORC": DataLakeDatabaseDataSourceViewDefaultFormat_ORC,
-			"TSV": DataLakeDatabaseDataSourceViewDefaultFormat_TSV,
-			"TSV_GZ": DataLakeDatabaseDataSourceViewDefaultFormat_TSV_GZ,
-		},
-	)
-	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.DataLakeDatabaseView",
-		reflect.TypeOf((*DataLakeDatabaseView)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.DataLakeStorageView",
-		reflect.TypeOf((*DataLakeStorageView)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.DataLakeViewView",
-		reflect.TypeOf((*DataLakeViewView)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.DataProcessRegion",
 		reflect.TypeOf((*DataProcessRegion)(nil)).Elem(),
 	)
@@ -3308,10 +3095,6 @@ func init() {
 		reflect.TypeOf((*PartitionFieldView)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.PartitionFields",
-		reflect.TypeOf((*PartitionFields)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.PrivateEndpoint",
 		reflect.TypeOf((*PrivateEndpoint)(nil)).Elem(),
 	)
@@ -3424,29 +3207,6 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.Sink",
-		reflect.TypeOf((*Sink)(nil)).Elem(),
-	)
-	_jsii_.RegisterEnum(
-		"awscdk-resources-mongodbatlas.SinkType",
-		reflect.TypeOf((*SinkType)(nil)).Elem(),
-		map[string]interface{}{
-			"DLS": SinkType_DLS,
-		},
-	)
-	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.Source",
-		reflect.TypeOf((*Source)(nil)).Elem(),
-	)
-	_jsii_.RegisterEnum(
-		"awscdk-resources-mongodbatlas.SourceType",
-		reflect.TypeOf((*SourceType)(nil)).Elem(),
-		map[string]interface{}{
-			"ON_DEMAND_CPS": SourceType_ON_DEMAND_CPS,
-			"PERIODIC_CPS": SourceType_PERIODIC_CPS,
-		},
-	)
-	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.Specs",
 		reflect.TypeOf((*Specs)(nil)).Elem(),
 	)
@@ -3457,10 +3217,6 @@ func init() {
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.Store",
 		reflect.TypeOf((*Store)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.StoreDetail",
-		reflect.TypeOf((*StoreDetail)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.StreamConfig",
@@ -3521,10 +3277,6 @@ func init() {
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.ThirdPartyIntegrationProps",
 		reflect.TypeOf((*ThirdPartyIntegrationProps)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
-		"awscdk-resources-mongodbatlas.Transformations",
-		reflect.TypeOf((*Transformations)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"awscdk-resources-mongodbatlas.Validation",

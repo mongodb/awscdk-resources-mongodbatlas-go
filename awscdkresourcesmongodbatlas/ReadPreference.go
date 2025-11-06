@@ -8,7 +8,7 @@ type ReadPreference struct {
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 	// List that contains tag sets or tag specification documents.
 	//
-	// If specified, Atlas Data Lake routes read requests to replica set member or members that are associated with the specified tags.
+	// If specified, Atlas Data Federation routes read requests to replica set member or members that are associated with the specified tags.
 	TagSets *[]*[]*TagSet `field:"optional" json:"tagSets" yaml:"tagSets"`
 }
 
