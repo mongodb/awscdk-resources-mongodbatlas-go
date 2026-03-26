@@ -5,7 +5,7 @@ package awscdkresourcesmongodbatlas
 type StreamsDataProcessRegion struct {
 	// Label that identifies the cloud service provider where MongoDB Cloud performs stream processing.
 	//
-	// Currently, this parameter supports AWS only.
+	// For CloudFormation, this is restricted to AWS only.
 	CloudProvider StreamsDataProcessRegionCloudProvider `field:"required" json:"cloudProvider" yaml:"cloudProvider"`
 	Region *string `field:"required" json:"region" yaml:"region"`
 }

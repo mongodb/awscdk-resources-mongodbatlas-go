@@ -2,16 +2,24 @@ package awscdkresourcesmongodbatlas
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v3/jsii"
+	_init_ "github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v4/jsii"
 
 	"github.com/aws/aws-cdk-go/awscdk/v2"
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v3/internal"
+	"github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v4/internal"
 )
 
 // A CloudFormation `MongoDB::Atlas::PrivateEndpointAWS`.
 type CfnPrivateEndpointAws interface {
 	awscdk.CfnResource
+	// Attribute `MongoDB::Atlas::PrivateEndpointAWS.ConnectionStatus`.
+	AttrConnectionStatus() *string
+	// Attribute `MongoDB::Atlas::PrivateEndpointAWS.DeleteRequested`.
+	AttrDeleteRequested() awscdk.IResolvable
+	// Attribute `MongoDB::Atlas::PrivateEndpointAWS.ErrorMessage`.
+	AttrErrorMessage() *string
+	// Attribute `MongoDB::Atlas::PrivateEndpointAWS.InterfaceEndpointId`.
+	AttrInterfaceEndpointId() *string
 	// Options for this resource, such as condition, update policy etc.
 	CfnOptions() awscdk.ICfnResourceOptions
 	CfnProperties() *map[string]interface{}
@@ -185,6 +193,46 @@ type CfnPrivateEndpointAws interface {
 // The jsii proxy struct for CfnPrivateEndpointAws
 type jsiiProxy_CfnPrivateEndpointAws struct {
 	internal.Type__awscdkCfnResource
+}
+
+func (j *jsiiProxy_CfnPrivateEndpointAws) AttrConnectionStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attrConnectionStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnPrivateEndpointAws) AttrDeleteRequested() awscdk.IResolvable {
+	var returns awscdk.IResolvable
+	_jsii_.Get(
+		j,
+		"attrDeleteRequested",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnPrivateEndpointAws) AttrErrorMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attrErrorMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnPrivateEndpointAws) AttrInterfaceEndpointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attrInterfaceEndpointId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CfnPrivateEndpointAws) CfnOptions() awscdk.ICfnResourceOptions {

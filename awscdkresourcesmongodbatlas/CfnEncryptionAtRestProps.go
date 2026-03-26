@@ -6,6 +6,8 @@ type CfnEncryptionAtRestProps struct {
 	AwsKmsConfig *AwsKmsConfig `field:"required" json:"awsKmsConfig" yaml:"awsKmsConfig"`
 	// Unique identifier of the Atlas project to which the user belongs.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
+	// Flag that indicates whether Encryption at Rest for Dedicated Search Nodes is enabled in the specified project.
+	EnabledForSearchNodes *bool `field:"optional" json:"enabledForSearchNodes" yaml:"enabledForSearchNodes"`
 	// The profile is defined in AWS Secret manager.
 	//
 	// See [Secret Manager Profile setup](../../../examples/profile-secret.yaml).

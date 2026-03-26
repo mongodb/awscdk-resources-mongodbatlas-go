@@ -2,16 +2,22 @@ package awscdkresourcesmongodbatlas
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v3/jsii"
+	_init_ "github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v4/jsii"
 
 	"github.com/aws/aws-cdk-go/awscdk/v2"
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v3/internal"
+	"github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v4/internal"
 )
 
 // A CloudFormation `MongoDB::Atlas::MaintenanceWindow`.
 type CfnMaintenanceWindow interface {
 	awscdk.CfnResource
+	// Attribute `MongoDB::Atlas::MaintenanceWindow.NumberOfDeferrals`.
+	AttrNumberOfDeferrals() *float64
+	// Attribute `MongoDB::Atlas::MaintenanceWindow.StartASAP`.
+	AttrStartASAP() awscdk.IResolvable
+	// Attribute `MongoDB::Atlas::MaintenanceWindow.TimeZoneId`.
+	AttrTimeZoneId() *string
 	// Options for this resource, such as condition, update policy etc.
 	CfnOptions() awscdk.ICfnResourceOptions
 	CfnProperties() *map[string]interface{}
@@ -185,6 +191,36 @@ type CfnMaintenanceWindow interface {
 // The jsii proxy struct for CfnMaintenanceWindow
 type jsiiProxy_CfnMaintenanceWindow struct {
 	internal.Type__awscdkCfnResource
+}
+
+func (j *jsiiProxy_CfnMaintenanceWindow) AttrNumberOfDeferrals() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"attrNumberOfDeferrals",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnMaintenanceWindow) AttrStartASAP() awscdk.IResolvable {
+	var returns awscdk.IResolvable
+	_jsii_.Get(
+		j,
+		"attrStartASAP",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CfnMaintenanceWindow) AttrTimeZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attrTimeZoneId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CfnMaintenanceWindow) CfnOptions() awscdk.ICfnResourceOptions {

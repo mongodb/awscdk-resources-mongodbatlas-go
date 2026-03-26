@@ -39,6 +39,8 @@ type NotificationView struct {
 	// - '"notifications.typeName" : "GROUP"'
 	// - '"notifications.typeName" : "USER"'
 	EmailEnabled *bool `field:"optional" json:"emailEnabled" yaml:"emailEnabled"`
+	// Unique 24-hexadecimal digit string that identifies the third party integration to use for this alert configuration.
+	IntegrationId *string `field:"optional" json:"integrationId" yaml:"integrationId"`
 	// Number of minutes to wait between successive notifications. MongoDB Cloud sends notifications until someone acknowledges the unacknowledged alert.
 	//
 	// PagerDuty, VictorOps, and OpsGenie notifications don't return this element. Configure and manage the notification interval within each of those services.
@@ -55,6 +57,8 @@ type NotificationView struct {
 	//
 	// The resource requires this parameter when '"notifications.typeName" : "HIP_CHAT"'". If the token later becomes invalid, MongoDB Cloud sends an email to the project owners. If the token remains invalid, MongoDB Cloud removes it.
 	NotificationToken *string `field:"optional" json:"notificationToken" yaml:"notificationToken"`
+	// Unique 24-hexadecimal digit string that identifies the notifier to use for this alert configuration.
+	NotifierId *string `field:"optional" json:"notifierId" yaml:"notifierId"`
 	// API Key that MongoDB Cloud needs to send this notification via Opsgenie.
 	//
 	// The resource requires this parameter when '"notifications.typeName" : "OPS_GENIE"'. If the key later becomes invalid, MongoDB Cloud sends an email to the project owners. If the key remains invalid, MongoDB Cloud removes it.

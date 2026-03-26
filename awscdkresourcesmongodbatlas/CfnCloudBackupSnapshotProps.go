@@ -3,9 +3,9 @@ package awscdkresourcesmongodbatlas
 
 // Returns, takes, and removes Cloud Backup snapshots.
 type CfnCloudBackupSnapshotProps struct {
-	// The instance name of the Serverless/Cluster whose snapshot you want to restore or you want to retrieve restore snapshot.
+	// Human-readable label that identifies the cluster.
 	InstanceName *string `field:"required" json:"instanceName" yaml:"instanceName"`
-	// Type of instance specified on the Instance Name serverless or cluster.
+	// Type of instance specified on the Instance Name.
 	InstanceType CfnCloudBackupSnapshotPropsInstanceType `field:"required" json:"instanceType" yaml:"instanceType"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`

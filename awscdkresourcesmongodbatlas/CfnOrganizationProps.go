@@ -34,6 +34,8 @@ type CfnOrganizationProps struct {
 	//
 	// Once this setting is turned on, you can grant MongoDB Support a 24-hour bypass access to the Atlas deployment to resolve support issues. To learn more, see: https://www.mongodb.com/docs/atlas/security-restrict-support-access/.
 	RestrictEmployeeAccess *bool `field:"optional" json:"restrictEmployeeAccess" yaml:"restrictEmployeeAccess"`
+	// Email address of the security contact for the organization.
+	SecurityContact *string `field:"optional" json:"securityContact" yaml:"securityContact"`
 	// Disables automatic alert creation.
 	//
 	// When set to `true`, Atlas doesn't automatically create organization-level alerts. Defaults to `true` for new Atlas Organizations created with the provider to prevent infrastructure drift caused by creation of new alerts.

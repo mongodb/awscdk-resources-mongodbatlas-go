@@ -2,16 +2,18 @@ package awscdkresourcesmongodbatlas
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v3/jsii"
+	_init_ "github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v4/jsii"
 
 	"github.com/aws/aws-cdk-go/awscdk/v2"
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v3/internal"
+	"github.com/mongodb/awscdk-resources-mongodbatlas-go/awscdkresourcesmongodbatlas/v4/internal"
 )
 
 // A CloudFormation `MongoDB::Atlas::SearchDeployment`.
 type CfnSearchDeployment interface {
 	awscdk.CfnResource
+	// Attribute `MongoDB::Atlas::SearchDeployment.EncryptionAtRestProvider`.
+	AttrEncryptionAtRestProvider() *string
 	// Attribute `MongoDB::Atlas::SearchDeployment.Id`.
 	AttrId() *string
 	// Attribute `MongoDB::Atlas::SearchDeployment.StateName`.
@@ -189,6 +191,16 @@ type CfnSearchDeployment interface {
 // The jsii proxy struct for CfnSearchDeployment
 type jsiiProxy_CfnSearchDeployment struct {
 	internal.Type__awscdkCfnResource
+}
+
+func (j *jsiiProxy_CfnSearchDeployment) AttrEncryptionAtRestProvider() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attrEncryptionAtRestProvider",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CfnSearchDeployment) AttrId() *string {

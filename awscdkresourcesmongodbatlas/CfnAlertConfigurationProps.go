@@ -21,6 +21,10 @@ type CfnAlertConfigurationProps struct {
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
 	// Unique 24-hexadecimal digit string that identifies your project.
 	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
+	// Degree of seriousness given to this alert.
+	//
+	// This value overrides the default severity level for the alert.
+	SeverityOverride *string `field:"optional" json:"severityOverride" yaml:"severityOverride"`
 	// Limit that triggers an alert when exceeded.
 	//
 	// The resource returns this parameter when **eventTypeName** has not been set to 'OUTSIDE_METRIC_THRESHOLD'.

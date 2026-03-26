@@ -10,5 +10,7 @@ type DatadogIntegrationProps struct {
 	ApiKey *string `field:"required" json:"apiKey" yaml:"apiKey"`
 	// Two-letter code that indicates which regional URL MongoDB uses to access the Datadog API.
 	Region DatadogRegion `field:"required" json:"region" yaml:"region"`
+	// Flag that indicates whether to include user-defined resource tags when sending metrics and alerts to Datadog.
+	SendUserProvidedResourceTags *bool `field:"optional" json:"sendUserProvidedResourceTags" yaml:"sendUserProvidedResourceTags"`
 }
 

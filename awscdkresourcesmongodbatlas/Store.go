@@ -7,7 +7,7 @@ type Store struct {
 	ClusterName *string `field:"optional" json:"clusterName" yaml:"clusterName"`
 	// Human-readable label that identifies the data store.
 	//
-	// The databases.[n].collections.[n].dataSources.[n].storeName field references this values as part of the mapping configuration. To use MongoDB Cloud as a data store, the Atlas Data Federation requires a serverless instance or an M10 or higher cluster.
+	// The databases.[n].collections.[n].dataSources.[n].storeName field references this values as part of the mapping configuration. To use MongoDB Cloud as a data store, the Atlas Data Federation requires an M10 or higher cluster.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Unique 24-hexadecimal digit string that identifies the project.Regex ^([a-f0-9]{24})$ .
 	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`

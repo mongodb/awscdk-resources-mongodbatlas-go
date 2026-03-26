@@ -33,6 +33,10 @@ type CfnDatabaseUserProps struct {
 	//
 	// Default value is `NONE`.
 	LdapAuthType CfnDatabaseUserPropsLdapAuthType `field:"optional" json:"ldapAuthType" yaml:"ldapAuthType"`
+	// Human-readable label that indicates whether the new database user or group authenticates with OIDC federated authentication.
+	//
+	// To create a federated authentication user, specify the value of USER in this field. To create a federated authentication group, specify the value of IDP_GROUP in this field. Default value is `NONE`.
+	OidcAuthType CfnDatabaseUserPropsOidcAuthType `field:"optional" json:"oidcAuthType" yaml:"oidcAuthType"`
 	// The user’s password.
 	//
 	// This field is not included in the entity returned from the server.

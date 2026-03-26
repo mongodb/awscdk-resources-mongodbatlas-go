@@ -11,9 +11,9 @@ type CfnFederatedQueryLimitProps struct {
 	TenantName *string `field:"required" json:"tenantName" yaml:"tenantName"`
 	// Amount to set the limit to.
 	Value *string `field:"required" json:"value" yaml:"value"`
-	// Only used for Data Federation limits.
+	// Action to take when the usage limit is exceeded.
 	//
-	// Action to take when the usage limit is exceeded. If limit span is set to QUERY, this is ignored because MongoDB Cloud stops the query when it exceeds the usage limit. "enum" : [ "BLOCK", "BLOCK_AND_KILL" ]
+	// If limit span is set to QUERY, this is ignored because MongoDB Cloud stops the query when it exceeds the usage limit.
 	OverrunPolicy *string `field:"optional" json:"overrunPolicy" yaml:"overrunPolicy"`
 	// Profile used to provide credentials information, (a secret with the cfn/atlas/profile/{Profile}, is required), if not provided default is used.
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
